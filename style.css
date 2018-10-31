@@ -1,11 +1,11 @@
 @font-face {
     font-family: "wigrum";
-    src: url('wigrum/wigrumweb-regular.woff') format('woff2');
+    src: url('wigrumweb-regular.woff') format('woff2');
 }
 
 @font-face {
     font-family: SweetSans;
-    src: url("sweetsans/Sweet-SweetSans-Light.otf") format('opentype');
+    src: url("Sweet-SweetSans-Light.otf") format('opentype');
 }
 
 
