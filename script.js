@@ -187,60 +187,15 @@ function initMap() {
 
 
 
-function isScrolledIntoView(elem)
-{
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
-
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
 
 
-// The checker
-const gambitGalleryIsInView = el => {
-    const scroll = window.scrollY || window.pageYOffset
-    const boundsTop = el.getBoundingClientRect().top + scroll
-
-    const viewport = {
-        top: scroll,
-        bottom: scroll + window.innerHeight,
-    }
-
-    const bounds = {
-        top: boundsTop,
-        bottom: boundsTop + el.clientHeight,
-    }
-
-    return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom )
-        || ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
-}
+// Text reveal
 
 
-// Usage.
-document.addEventListener( 'DOMContentLoaded', () => {
-    const tester = document.querySelector( '.last_section' )
 
-    const handler = () => raf( () => {
-        if ( gambitGalleryIsInView( tester )){
 
-        document.querySelector('.footer').style.display="none"}
-        else{
-            document.querySelector('.footer').style.display="block"
-        }
-    } )
 
-    handler()
-    window.addEventListener( 'scroll', handler )
-} )
 
-// requestAnimationFrame
-const raf =
-    window.requestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame ||
-    function( callback ) {
-        window.setTimeout( callback, 1000 / 60 )
-    }
+
+
+
