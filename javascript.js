@@ -33,80 +33,80 @@ function exitprivacy() {
 }
 
 
-// text reveals
+// // text reveals
 
-function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+// function isScrolledIntoView(elem) {
+//     var docViewTop = $(window).scrollTop();
+//     var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+//     var elemTop = $(elem).offset().top;
+//     var elemBottom = elemTop + $(elem).height();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
-
-
-// The checker
-const gambitGalleryIsInView = el => {
-    const scroll = window.scrollY || window.pageYOffset
-    const boundsTop = el.getBoundingClientRect().top + scroll
-
-    const viewport = {
-        top: scroll,
-        bottom: scroll + window.innerHeight,
-    }
-
-    const bounds = {
-        top: boundsTop,
-        bottom: boundsTop + el.clientHeight,
-    }
-
-    return (bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom) ||
-        (bounds.top <= viewport.bottom && bounds.top >= viewport.top);
-}
+//     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+// }
 
 
-// Usage.
-document.addEventListener('DOMContentLoaded', () => {
-    const tester = document.querySelector('#target')
+// // The checker
+// const gambitGalleryIsInView = el => {
+//     const scroll = window.scrollY || window.pageYOffset
+//     const boundsTop = el.getBoundingClientRect().top + scroll
 
-    const handler = () => raf(() => {
-        if (gambitGalleryIsInView(tester)) {
+//     const viewport = {
+//         top: scroll,
+//         bottom: scroll + window.innerHeight,
+//     }
 
-            // if (document.getElementById("hide").style.right == 0) {
-            //     var elem = document.getElementById("hide");
-            //     elem.style.display='block';
-            //     var pos = -500;
-            //     var id = setInterval(frame, 15);
+//     const bounds = {
+//         top: boundsTop,
+//         bottom: boundsTop + el.clientHeight,
+//     }
 
-            //     function frame() {
-            //         if (pos == 0) {
-            //             clearInterval(id);
-            //         } else {
-            //             pos += 10;
-            //             elem.style.right = pos + 'px';
-            //         }
-            //     }
-
-            // }
-        } else {
-
-        }
-    })
-
-    handler()
-    window.addEventListener('scroll', handler)
-})
+//     return (bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom) ||
+//         (bounds.top <= viewport.bottom && bounds.top >= viewport.top);
+// }
 
 
-// requestAnimationFrame
-const raf =
-    window.requestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame ||
-    function(callback) {
-        window.setTimeout(callback, 1000 / 60)
-    }
+// // Usage.
+// document.addEventListener('DOMContentLoaded', () => {
+//     const tester = document.querySelector('#target')
+
+//     const handler = () => raf(() => {
+//         if (gambitGalleryIsInView(tester)) {
+
+//             // if (document.getElementById("hide").style.right == 0) {
+//             //     var elem = document.getElementById("hide");
+//             //     elem.style.display='block';
+//             //     var pos = -500;
+//             //     var id = setInterval(frame, 15);
+
+//             //     function frame() {
+//             //         if (pos == 0) {
+//             //             clearInterval(id);
+//             //         } else {
+//             //             pos += 10;
+//             //             elem.style.right = pos + 'px';
+//             //         }
+//             //     }
+
+//             // }
+//         } else {
+
+//         }
+//     })
+
+//     handler()
+//     window.addEventListener('scroll', handler)
+// })
+
+
+// // requestAnimationFrame
+// const raf =
+//     window.requestAnimationFrame ||
+//     window.webkitRequestAnimationFrame ||
+//     window.mozRequestAnimationFrame ||
+//     function(callback) {
+//         window.setTimeout(callback, 1000 / 60)
+//     }
 
 
 
