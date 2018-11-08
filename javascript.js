@@ -56,7 +56,7 @@ var distancesix = $('.dsix').offset().top,
     $window = $(window);
 
 $window.scroll(function() {
-    if ( $window.scrollTop() >= distancesix +500) {
+    if ( $window.scrollTop() >= distancesix/4*3 ) {
         $('.hidden').show("slide"), {direction: "right"};
 
         $('.six').show("slide");
@@ -70,7 +70,7 @@ var distanceseven = $('.dseven').offset().top,
     $window = $(window);
 
 $window.scroll(function() {
-    if ( $window.scrollTop() >= distanceseven + 500) {
+    if ( $window.scrollTop() >= distanceseven/4*3 ) {
         $('.seven').show("slide");
 
 
@@ -87,7 +87,7 @@ var distancenine = $('.dnine').offset().top,
     $window = $(window);
 
 $window.scroll(function() {
-    if ( $window.scrollTop() >= distancenine) {
+    if ( $window.scrollTop() >= distancenine/4*3) {
         $('.nine').show("slide"), {direction: "right"};
         $('.ninet').show("slide"), {direction: "right"};
 
