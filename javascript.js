@@ -57,9 +57,9 @@ var distancesix = $('.dsix').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancesix-100 ) {
-        $('.hidden').show("slide"), {direction: "right"};
-
         $('.six').show("slide");
+
+        $('.hidden').show("slide"), {direction: "right"};
 
 
     }
@@ -72,7 +72,6 @@ var distanceseven = $('.dseven').offset().top,
 $window.scroll(function() {
     if ( $window.scrollTop() >= distanceseven-100 ) {
         $('.seven').show("slide");
-
 
         if($('.seven').css('display') != 'none'){
         $('.sevent').show("slide");
@@ -88,8 +87,8 @@ var distancenine = $('.dnine').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancenine-100) {
-        $('.nine').show("slide"), {direction: "right"};
-        $('.ninet').show("slide"), {direction: "right"};
+        $('.nine').show("slide");
+        $('.ninet').show("slide");
 
 
     }
