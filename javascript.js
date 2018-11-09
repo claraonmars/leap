@@ -1,13 +1,38 @@
 
 (function($) {
 
+// See https://github.com/daneden/animate.css/issues/644
+var animationEnd = (function(el) {
+  var animations = {
+    animation: 'animationend',
+    OAnimation: 'oAnimationEnd',
+    MozAnimation: 'mozAnimationEnd',
+    WebkitAnimation: 'webkitAnimationEnd',
+  };
+
+  for (var t in animations) {
+    if (el.style[t] !== undefined) {
+      return animations[t];
+    }
+  }
+})(document.createElement('div'));
+
+
+$('.two').one(animationEnd, doSomething);
+
+var doSomething = function(){
+    console.log('end')
+}
+
+
+
 // second div
 var distance = $('.dtwo').offset().top,
     $window = $(window);
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distance/4*3 ) {
-        $('.two').show("slide");
+        $('.two').addClass('animated slideInLeft');
     }
 });
 
@@ -18,13 +43,13 @@ var distancethree = $('.dthree').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancethree - 150 ) {
-        $('.three').show("slide");
+        $('.three').addClass('animated slideInLeft');
     }
 });
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancethree -100 ) {
-        $('.threet').show("slide");
+        $('.threet').addClass('animated slideInLeft');
 
     }
 });
@@ -35,8 +60,7 @@ var distancefour = $('.dfour').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancefour -100) {
-        $('.four').show("slide");
-
+        $('.four').addClass('animated slideInLeft');
     }
 });
 
@@ -46,7 +70,7 @@ var distancefive = $('.dfive').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancefive -100) {
-        $('.five').show("slide");
+        $('.five').addClass('animated slideInLeft');
 
     }
 });
@@ -57,9 +81,9 @@ var distancesix = $('.dsix').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancesix-100 ) {
-        $('.six').show("slide");
+        $('.six').addClass('animated slideInLeft');
 
-        $('.hidden').show("slide"), {direction: "right"};
+        $('.hidden').addClass('animated slideInRight');
 
 
     }
@@ -71,10 +95,10 @@ var distanceseven = $('.dseven').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distanceseven-100 ) {
-        $('.seven').show("slide");
+        $('.seven').addClass('animated slideInLeft');
 
         if($('.seven').css('display') != 'none'){
-        $('.sevent').show("slide");
+        $('.sevent').addClass('animated slideInLeft');
         }
 
     }
@@ -86,11 +110,11 @@ var distancenine = $('.dnine').offset().top,
     $window = $(window);
 
 $window.scroll(function() {
+    if ( $window.scrollTop() >= distancenine-200) {
+        $('.nine').addClass('animated slideInLeft');
+}
     if ( $window.scrollTop() >= distancenine-100) {
-        $('.nine').show("slide");
-        $('.ninet').show("slide");
-
-
+    $('.ninet').addClass('animated slideInLeft');
     }
 });
 
@@ -101,8 +125,8 @@ var distanceten = $('.dten').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distanceten) {
-        $('.tent').show("slide");
-        $('.ten').show("slide");
+        $('.tent').addClass('animated slideInLeft');
+        $('.ten').addClass('animated slideInLeft');
 
 
     }
@@ -110,6 +134,8 @@ $window.scroll(function() {
 
 
 })(jQuery);
+
+
 
 
 // on click terms & conditions
