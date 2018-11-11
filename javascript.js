@@ -1,38 +1,21 @@
-
 (function($) {
-
-// See https://github.com/daneden/animate.css/issues/644
-var animationEnd = (function(el) {
-  var animations = {
-    animation: 'animationend',
-    OAnimation: 'oAnimationEnd',
-    MozAnimation: 'mozAnimationEnd',
-    WebkitAnimation: 'webkitAnimationEnd',
-  };
-
-  for (var t in animations) {
-    if (el.style[t] !== undefined) {
-      return animations[t];
-    }
-  }
-})(document.createElement('div'));
+          $.scrollify({
+            section : ".main",
+            interstitialSection:".basesection",
+            scrollSpeed: 1400,
 
 
-$('.two').one(animationEnd, doSomething);
-
-var doSomething = function(){
-    console.log('end')
-}
-
-
+          });
 
 // second div
 var distance = $('.dtwo').offset().top,
     $window = $(window);
 
+
 $window.scroll(function() {
+
     if ( $window.scrollTop() >= distance/4*3 ) {
-        $('.two').addClass('animated slideInLeft');
+        $('.two').addClass('animated slideInLeft faster');
     }
 });
 
@@ -42,14 +25,17 @@ var distancethree = $('.dthree').offset().top,
     $window = $(window);
 
 $window.scroll(function() {
+
     if ( $window.scrollTop() >= distancethree - 150 ) {
-        $('.three').addClass('animated slideInLeft');
+        $('.three').addClass('animated slideInLeft faster');
+        $('.two').removeClass('animated slideInLeft slideOutLeft faster');
+
     }
 });
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancethree -100 ) {
-        $('.threet').addClass('animated slideInLeft');
+        $('.threet').addClass('animated slideInLeft faster');
 
     }
 });
@@ -60,7 +46,11 @@ var distancefour = $('.dfour').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancefour -100) {
-        $('.four').addClass('animated slideInLeft');
+        $('.four').addClass('animated slideInLeft faster');
+        $('.three').removeClass('animated slideInLeft slideOutLeft faster');
+        $('.threet').removeClass('animated slideInLeft slideOutLeft faster');
+
+
     }
 });
 
@@ -70,7 +60,9 @@ var distancefive = $('.dfive').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancefive -100) {
-        $('.five').addClass('animated slideInLeft');
+        $('.five').addClass('animated slideInLeft faster');
+        $('.four').removeClass('animated slideInLeft slideOutLeft faster');
+
 
     }
 });
@@ -81,9 +73,10 @@ var distancesix = $('.dsix').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancesix-100 ) {
-        $('.six').addClass('animated slideInLeft');
+        $('.six').addClass('animated slideInLeft faster');
+        $('.hidden').addClass('animated slideInRight fast');
 
-        $('.hidden').addClass('animated slideInRight');
+        $('.five').removeClass('animated slideInLeft slideOutLeft faster');
 
 
     }
@@ -95,10 +88,11 @@ var distanceseven = $('.dseven').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distanceseven-100 ) {
-        $('.seven').addClass('animated slideInLeft');
+        $('.seven').addClass('animated slideInLeft faster');
+        $('.six').removeClass('animated slideInLeft slideOutLeft faster');
 
         if($('.seven').css('display') != 'none'){
-        $('.sevent').addClass('animated slideInLeft');
+        $('.sevent').addClass('animated slideInLeft faster');
         }
 
     }
@@ -110,11 +104,15 @@ var distancenine = $('.dnine').offset().top,
     $window = $(window);
 
 $window.scroll(function() {
-    if ( $window.scrollTop() >= distancenine-200) {
-        $('.nine').addClass('animated slideInLeft');
+    if ( $window.scrollTop() >= distancenine-500) {
+        $('.nine').addClass('animated slideInLeft faster');
+        $('.seven').removeClass('animated slideInLeft slideOutLeft faster');
+        $('.sevent').removeClass('animated slideInLeft slideOutLeft faster');
+
+
 }
-    if ( $window.scrollTop() >= distancenine-100) {
-    $('.ninet').addClass('animated slideInLeft');
+    if ( $window.scrollTop() >= distancenine-300) {
+    $('.ninet').addClass('animated slideInLeft faster');
     }
 });
 
@@ -124,9 +122,11 @@ var distanceten = $('.dten').offset().top,
     $window = $(window);
 
 $window.scroll(function() {
-    if ( $window.scrollTop() >= distanceten) {
-        $('.tent').addClass('animated slideInLeft');
-        $('.ten').addClass('animated slideInLeft');
+    if ( $window.scrollTop() >= distanceten - 200) {
+        $('.tent').addClass('animated slideInLeft faster');
+        $('.ten').addClass('animated slideInLeft faster');
+        $('.nine').removeClass('animated slideInLeft slideOutLeft faster');
+        $('.ninet').removeClass('animated slideInLeft slideOutLeft faster');
 
 
     }

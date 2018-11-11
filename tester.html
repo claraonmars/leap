@@ -15,6 +15,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="paper-full.js"></script>
+
     <script type="text/paperscript" canvas="canvas">
     var points = 8;
     var myPath = createLine();
@@ -155,17 +156,7 @@
                 myPath.smooth({ type: 'continuous' });
              }
 
-            else if (i > (bodyheight/11)*6 && i <= (bodyheight/11)*7){
-                myPath.segments[3].point.y += 0.05;
-                myPath.segments[4].point.y += 0.15;
-                myPath.segments[5].point.y += 0.25;
-                myPath.segments[6].point.y += 0.3;
-                myPath.segments[7].point.y += 0.3;
-                myPath.segments[8].point.y += 0.4;
-                myPath.segments[9].point.y += 0.55;
 
-                myPath.smooth({ type: 'continuous' });
-            }
 
 
             else if (i > (bodyheight/11)*7 && i <= (bodyheight/11)*8){
@@ -263,7 +254,7 @@
         <!-- Body -->
         <div class="wrapper">
             <!-- Body One -->
-            <div class="row main done">
+            <div class="row main done scroll">
                 <div class="col-8">
                     <div class="baseline one">
                         Artificial Intelligence<br>
@@ -274,7 +265,7 @@
             </div>
 
             <!-- Body Two -->
-            <div class="row main justify-content-center dtwo">
+            <div class="row main justify-content-center dtwo scroll">
                 <div class="col-5">
                     <div class="midline two">
                         To Leapfrog Asia<br>
@@ -284,13 +275,13 @@
             </div>
 
             <!-- Body Three -->
-            <div class="row main justify-content-end dthree">
+            <div class="row main justify-content-end dthree scroll">
                 <div class="col-6">
                     <div class="topline three">
                         As Digital<br>
                         Big-Thinkers
                     </div>
-                    <div class="col-8">
+                    <div class="col-12">
                         <div class="baseline threet">
                             <p>
                                 We help organisations
@@ -303,7 +294,7 @@
             </div>
 
             <!-- Body Four -->
-            <div class="row main justify-content-end dfour">
+            <div class="row main justify-content-end dfour scroll">
                 <div class="col-6">
                     <div class="altbaseline four">
                         <h3>
@@ -314,7 +305,7 @@
             </div>
 
             <!-- Body Five -->
-            <div class="row main justify-content-end dfive">
+            <div class="row main justify-content-end dfive scroll">
                 <div class="col-6">
                     <div class="altbaseline five">
                         <h3>
@@ -325,7 +316,7 @@
             </div>
 
             <!-- Body Six -->
-            <div class="row main justify-content-end dsix">
+            <div class="row main justify-content-end dsix scroll">
                 <div class="col-6">
                     <div class="altbaseline six">
                         <h3>
@@ -340,7 +331,7 @@
                 <div class="here"></div>
             </div>
 
-            <div class="row main dseven">
+            <div class="row main dseven scroll">
                 <div class="col-6">
                     <div class="baseline seven" id="target">
                         Embrace the Future<br>
@@ -352,13 +343,10 @@
                 </div>
             </div>
 
-            <!-- Body Eight (no text, transition line)-->
-            <div class="row main eight">
-
-            </div>
+            <!--  -->
 
             <!-- Body Nine -->
-            <div class="row main justify-content-end dnine">
+            <div class="row main justify-content-end dnine scroll">
                 <div class="col-8">
                     <div class="baseline nine">
                         We are<br>
@@ -370,8 +358,10 @@
                 </div>
             </div>
 
+
+
             <!-- Body Ten (includes signup form)-->
-            <div class="row main dten">
+            <div class="row main dten scroll">
                 <div class="col-8">
                     <div class="baseline ten">
                         Watch this space<br>
@@ -504,6 +494,8 @@
             </div>
         </div>
         <!-- End of lightbox pop ups -->
+                <script type="text/javascript" src="scrollify.js"></script>
+
         <script type="text/javascript" src="javascript.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvIOA1fSvyvcGj-eCn_QA0vIqpBcoNXL0&callback=initMap">
         </script>
