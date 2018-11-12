@@ -26,9 +26,9 @@ canvas[resize] {
     margin-left:5%;
 }
 
-.two, .three, .threet, .four, .five, .six, .seven, .sevent, .nine, .ninet, .ten, .tent, .hidden{
+/*.two, .three, .threet, .four, .five, .six, .seven, .sevent, .nine, .ninet, .ten, .tent, .hidden{
 	display:none;
-}
+}*/
 
 .animated{
 	display:block;
@@ -81,6 +81,10 @@ p {
 h3 {
 		letter-spacing: 2px;
 		margin-left: 30px;
+}
+
+h5{
+	margin-bottom:10px;
 }
 
 .topline {
@@ -200,6 +204,7 @@ label{
 	border:none;
 	color:white;
 	width:20%;
+	margin-top:10px;
 }
 
 .company {
@@ -258,6 +263,11 @@ label{
 
 .lightbox{
 	display:inline-block;
+	}
+
+.lightbox:hover{
+		border-bottom:1px white solid;
+
 }
 
 #terms{
@@ -411,7 +421,7 @@ canvas[resize] {
 }
 p{
 	font-size:14px;
-	line-height: 25px;
+	line-height: 20px;
 	margin-top:-30vh;
 }
 
@@ -459,11 +469,11 @@ h3{
 
 .ninet{
 	display:block;
-	top:-60vh;
+	top:-40vh;
 }
 
 .nine{
-	top:50vh;
+	top:22vh;
 }
 
 .name{

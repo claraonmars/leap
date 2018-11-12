@@ -2,7 +2,7 @@
           $.scrollify({
             section : ".main",
             interstitialSection:".basesection",
-            scrollSpeed: 1400,
+            scrollSpeed: 1000,
 
 
           });
@@ -15,7 +15,7 @@ var distance = $('.dtwo').offset().top,
 $window.scroll(function() {
 
     if ( $window.scrollTop() >= distance/4*3 ) {
-        $('.two').addClass('animated slideInLeft faster');
+        //$('.two').addClass('animated slideInLeft faster');
     }
 });
 
@@ -27,15 +27,15 @@ var distancethree = $('.dthree').offset().top,
 $window.scroll(function() {
 
     if ( $window.scrollTop() >= distancethree - 150 ) {
-        $('.three').addClass('animated slideInLeft faster');
-        $('.two').removeClass('animated slideInLeft slideOutLeft faster');
+        //$('.three').addClass('animated slideInLeft faster');
+        //$('.two').removeClass('animated slideInLeft slideOutLeft faster');
 
     }
 });
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancethree -100 ) {
-        $('.threet').addClass('animated slideInLeft faster');
+        //$('.threet').addClass('animated slideInLeft faster');
 
     }
 });
@@ -46,9 +46,9 @@ var distancefour = $('.dfour').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancefour -100) {
-        $('.four').addClass('animated slideInLeft faster');
-        $('.three').removeClass('animated slideInLeft slideOutLeft faster');
-        $('.threet').removeClass('animated slideInLeft slideOutLeft faster');
+        //$('.four').addClass('animated slideInLeft faster');
+        //$('.three').removeClass('animated slideInLeft slideOutLeft faster');
+        //$('.threet').removeClass('animated slideInLeft slideOutLeft faster');
 
 
     }
@@ -60,8 +60,8 @@ var distancefive = $('.dfive').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancefive -100) {
-        $('.five').addClass('animated slideInLeft faster');
-        $('.four').removeClass('animated slideInLeft slideOutLeft faster');
+        //$('.five').addClass('animated slideInLeft faster');
+        //$('.four').removeClass('animated slideInLeft slideOutLeft faster');
 
 
     }
@@ -73,10 +73,10 @@ var distancesix = $('.dsix').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancesix-100 ) {
-        $('.six').addClass('animated slideInLeft faster');
-        $('.hidden').addClass('animated slideInRight fast');
+        //$('.six').addClass('animated slideInLeft faster');
+        //$('.hidden').addClass('animated slideInRight fast');
 
-        $('.five').removeClass('animated slideInLeft slideOutLeft faster');
+        //$('.five').removeClass('animated slideInLeft slideOutLeft faster');
 
 
     }
@@ -88,12 +88,12 @@ var distanceseven = $('.dseven').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distanceseven-100 ) {
-        $('.seven').addClass('animated slideInLeft faster');
-        $('.six').removeClass('animated slideInLeft slideOutLeft faster');
+        //$('.seven').addClass('animated slideInLeft faster');
+        //$('.six').removeClass('animated slideInLeft slideOutLeft faster');
 
-        if($('.seven').css('display') != 'none'){
-        $('.sevent').addClass('animated slideInLeft faster');
-        }
+        //if($('.seven').css('display') != 'none'){
+        //$('.sevent').addClass('animated slideInLeft faster');
+        //}
 
     }
 });
@@ -105,14 +105,14 @@ var distancenine = $('.dnine').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distancenine-500) {
-        $('.nine').addClass('animated slideInLeft faster');
-        $('.seven').removeClass('animated slideInLeft slideOutLeft faster');
-        $('.sevent').removeClass('animated slideInLeft slideOutLeft faster');
+        //$('.nine').addClass('animated slideInLeft faster');
+        //$('.seven').removeClass('animated slideInLeft slideOutLeft faster');
+        //$('.sevent').removeClass('animated slideInLeft slideOutLeft faster');
 
 
 }
     if ( $window.scrollTop() >= distancenine-300) {
-    $('.ninet').addClass('animated slideInLeft faster');
+    //$('.ninet').addClass('animated slideInLeft faster');
     }
 });
 
@@ -123,10 +123,10 @@ var distanceten = $('.dten').offset().top,
 
 $window.scroll(function() {
     if ( $window.scrollTop() >= distanceten - 200) {
-        $('.tent').addClass('animated slideInLeft faster');
-        $('.ten').addClass('animated slideInLeft faster');
-        $('.nine').removeClass('animated slideInLeft slideOutLeft faster');
-        $('.ninet').removeClass('animated slideInLeft slideOutLeft faster');
+        //$('.tent').addClass('animated slideInLeft faster');
+        //$('.ten').addClass('animated slideInLeft faster');
+        //$('.nine').removeClass('animated slideInLeft slideOutLeft faster');
+        //$('.ninet').removeClass('animated slideInLeft slideOutLeft faster');
 
 
     }
