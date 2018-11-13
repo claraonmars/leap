@@ -51,8 +51,9 @@
 
     function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-};
+    };
 
+    console.log(isMobileDevice());
 
     function onFrame(event) {
         var scroll = window.scrollY;
@@ -160,6 +161,7 @@
              }
 
              else if (i > (bodyheight/11)*6 && i <= (bodyheight/11)*7){
+                if(isMobileDevice() !== "false"){
                 myPath.segments[3].point.y += 0.05;
                 myPath.segments[4].point.y += 0.15;
                 myPath.segments[5].point.y += 0.15;
@@ -168,6 +170,17 @@
                 myPath.segments[8].point.y += 0.4;
                 myPath.segments[9].point.y += 0.55;
                 myPath.smooth({ type: 'continuous' });
+                }
+                else{
+                myPath.segments[3].point.y += 0.05;
+                myPath.segments[4].point.y += 0.15;
+                myPath.segments[5].point.y += 0.25;
+                myPath.segments[6].point.y += 0.3;
+                myPath.segments[7].point.y += 0.3;
+                myPath.segments[8].point.y += 0.4;
+                myPath.segments[9].point.y += 0.55;
+                myPath.smooth({ type: 'continuous' });
+                }
             }
 
 
