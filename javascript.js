@@ -3,6 +3,7 @@
             section : ".scroll",
             interstitialSection:".basesection",
             scrollSpeed: 1000,
+            touchScroll:false
 
 
           });
