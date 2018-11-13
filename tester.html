@@ -50,6 +50,10 @@
       path.fitBounds = view.bounds;
     }
 
+    function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
 
     function onFrame(event) {
         var scroll = window.scrollY;
@@ -156,7 +160,7 @@
                 myPath.smooth({ type: 'continuous' });
              }
 
-             else if (i > (bodyheight/11)*6 && i <= (bodyheight/11)*7){
+             else if (i > (bodyheight/11)*6 && i <= (bodyheight/11)*7 && isMobileDevice() === true){
                 myPath.segments[3].point.y += 0.05;
                 myPath.segments[4].point.y += 0.15;
                 myPath.segments[5].point.y += 0.15;
