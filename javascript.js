@@ -14,9 +14,12 @@ var is_chrome = !!window.chrome && !is_opera;
 
           });
 
-          if (is_chrome!= true) {
+          if (is_chrome !== true) {
             // alert('safari');
             $.scrollify({
+            section : ".scroll",
+            interstitialSection:".basesection",
+            scrollSpeed: 1000,
             touchScroll: false,
 
           });
