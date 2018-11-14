@@ -10,7 +10,8 @@
           $.scrollify({
             section : ".scroll",
             interstitialSection:".basesection",
-            scrollSpeed: 1000
+            scrollSpeed: 1000,
+            touchScroll:false
 
           });
 
@@ -20,7 +21,8 @@
             section : ".scroll",
             interstitialSection:".basesection",
             scrollSpeed: 1000,
-            touchScroll: false
+            touchScroll: false,
+            scrollbars: true
 
             });
           };
