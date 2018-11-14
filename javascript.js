@@ -13,7 +13,7 @@
           });
 
           if (isSafari) {
-        alert("You are using Safari!");
+            alert("You are using Safari!");
     }
 
 
