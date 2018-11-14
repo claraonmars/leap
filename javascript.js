@@ -13,7 +13,12 @@
           });
 
           if (isSafari) {
-            alert("You are using Safari!");
+           $.scrollify({
+            section : ".scroll",
+            interstitialSection: ".basesection",
+            scrollSpeed: 1000,
+            touchScroll: false
+          });
     }
 
 
