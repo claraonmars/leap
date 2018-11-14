@@ -362,7 +362,7 @@ label{
 }
 
 /*phone landscape, tablet portrait*/
-@media only screen and (min-width: 651px) {
+@media only screen and (min-width: 621px) {
 body{
 	  flex-direction: column;
 	  overflow-x: hidden;
@@ -553,7 +553,7 @@ text-align:center;
 
 
 /*phone portrait*/
-@media screen and (max-width: 650px){
+@media screen and (max-width: 620px){
 body{
 	  flex-direction: column;
 	  overflow-x: hidden;
