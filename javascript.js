@@ -1,6 +1,6 @@
  var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
     if (isSafari) {
-        alert("You are using Safari!");
+        alert("notworking!");
     }
 
 
@@ -11,6 +11,10 @@
             interstitialSection: ".basesection",
             scrollSpeed: 1000
           });
+
+          if (isSafari) {
+        alert("You are using Safari!");
+    }
 
 
 
