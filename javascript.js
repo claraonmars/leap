@@ -9,29 +9,12 @@
 
     $.browser.safari = $.browser.webkit && !window.chrome;
     $.browser.chrome = $.browser.webkit && !!window.chrome;
-var ua = window.navigator.userAgent;
-var iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
-var webkit = !!ua.match(/WebKit/i);
-var iOSSafari = iOS && webkit && !ua.match(/CriOS/i);
-
 
           $.scrollify({
             section : ".scroll",
             interstitialSection:".basesection",
             scrollSpeed: 1000
           });
-
-          if (iOSSafari) {
-             alert('safari');
-            $.scrollify({
-            section : ".scroll",
-            interstitialSection:".basesection",
-            scrollSpeed: 1000,
-            touchScroll: false,
-            scrollbars: true
-
-            });
-          };
 
 
 
