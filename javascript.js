@@ -14,7 +14,7 @@ var is_chrome = !!window.chrome && !is_opera;
 
           });
 
-          if (is_safari) {
+          if (is_chrome!= true) {
             // alert('safari');
             $.scrollify({
             touchScroll: false,
