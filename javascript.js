@@ -7,14 +7,17 @@
 
 (function($) {
 
+    $.browser.safari = $.browser.webkit && !window.chrome;
+
+
           $.scrollify({
             section : ".scroll",
             interstitialSection:".basesection",
             scrollSpeed: 1000
           });
 
-          if (is_chrome !== true) {
-            // alert('safari');
+          if ($.browser.safari) {
+             alert('safari');
             $.scrollify({
             section : ".scroll",
             interstitialSection:".basesection",
