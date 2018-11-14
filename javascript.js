@@ -6,18 +6,18 @@
 
 (function($) {
 
-          $.scrollify({
-            section : ".scroll",
-            interstitialSection: ".basesection",
-            scrollSpeed: 1000
-          });
-
           if (isSafari) {
            $.scrollify({
             section : ".scroll",
             interstitialSection: ".basesection",
             scrollSpeed: 1000,
             touchScroll: false
+          });
+    }else{
+        $.scrollify({
+            section : ".scroll",
+            interstitialSection: ".basesection",
+            scrollSpeed: 1000
           });
     }
 
