@@ -8,6 +8,9 @@
 (function($) {
 
     $.browser.safari = $.browser.webkit && !window.chrome;
+    $.browser.chrome = $.browser.webkit && !!window.chrome;
+    var iOSSafari = iOS && webkit && !ua.match(/CriOS/i);
+
 
 
           $.scrollify({
@@ -16,7 +19,7 @@
             scrollSpeed: 1000
           });
 
-          if ($.browser.safari) {
+          if (iOSSafari) {
              alert('safari');
             $.scrollify({
             section : ".scroll",
