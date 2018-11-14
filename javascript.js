@@ -7,9 +7,6 @@
 
 (function($) {
 
-    $.browser.safari = $.browser.webkit && !window.chrome;
-    $.browser.chrome = $.browser.webkit && !!window.chrome;
-
           $.scrollify({
             section : ".scroll",
             interstitialSection:".basesection",
