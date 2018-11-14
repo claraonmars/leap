@@ -1,4 +1,4 @@
-var is_chrome = !!window.chrome && !is_opera;
+    var is_chrome = !!window.chrome && !is_opera;
     var is_explorer= typeof document !== 'undefined' && !!document.documentMode && !isEdge;
     var is_firefox = typeof window.InstallTrigger !== 'undefined';
     var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -20,9 +20,9 @@ var is_chrome = !!window.chrome && !is_opera;
             section : ".scroll",
             interstitialSection:".basesection",
             scrollSpeed: 1000,
-            touchScroll: false,
+            touchScroll: false
 
-          });
+            });
           };
 
 
