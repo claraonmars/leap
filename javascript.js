@@ -10,7 +10,7 @@
           $.scrollify({
             section : ".scroll",
             interstitialSection:".basesection",
-            scrollSpeed: 1000,
+            scrollSpeed: 1000
 
           });
 
