@@ -10,9 +10,7 @@
           $.scrollify({
             section : ".scroll",
             interstitialSection:".basesection",
-            scrollSpeed: 1000,
-            touchScroll:false
-
+            scrollSpeed: 1000
           });
 
           if (is_chrome !== true) {
