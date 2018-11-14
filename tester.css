@@ -362,7 +362,7 @@ label{
 }
 
 /*phone landscape, tablet portrait*/
-@media only screen and (min-width: 621px) {
+/*@media only screen and (min-width: 621px) {
 body{
 	  flex-direction: column;
 	  overflow-x: hidden;
@@ -549,7 +549,7 @@ text-align:center;
 }
 
 
-}
+}*/
 
 
 /*phone portrait*/
