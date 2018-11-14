@@ -11,16 +11,17 @@ var is_chrome = !!window.chrome && !is_opera;
             section : ".scroll",
             interstitialSection:".basesection",
             scrollSpeed: 1000,
+            touchScroll:false
 
           });
 
-          if (is_safari) {
-            alert('safari');
-            $.scrollify({
-            touchScroll: false
+          // if (is_safari) {
+          //   alert('safari');
+          //   $.scrollify({
+          //   touchScroll: false,
 
-          });
-          };
+          // });
+          // };
 
 
 
