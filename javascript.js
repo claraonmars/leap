@@ -1,15 +1,14 @@
-    var is_chrome = !!window.chrome && !is_opera;
-    var is_explorer= typeof document !== 'undefined' && !!document.documentMode && !isEdge;
-    var is_firefox = typeof window.InstallTrigger !== 'undefined';
-    var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    var is_opera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+ var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+    if (isSafari) {
+        alert("You are using Safari!");
+    }
 
 
 (function($) {
 
           $.scrollify({
             section : ".scroll",
-            interstitialSection:".basesection",
+            interstitialSection: ".basesection",
             scrollSpeed: 1000
           });
 
