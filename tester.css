@@ -137,7 +137,7 @@ h5{
 				z-index:+10;
 }
 
-.lockupm{
+.lockupm, .lockupp{
 	display:none;
 }
 
@@ -361,7 +361,198 @@ label{
 	display: none;
 }
 
+/*phone landscape, tablet portrait*/
+@media only screen and (max-width: 740px) {
+body{
+	  flex-direction: column;
+	  overflow-x: hidden;
+}
 
+canvas[resize] {
+    width: 130%;
+    height: 90%;
+    margin-top:-7%;
+    position:fixed;
+    margin-left: -30%;
+}
+
+.col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
+	max-width:100%;
+}
+
+.mobileleap{
+	display: none;
+}
+
+.main{
+	flex-direction: column;
+	font-size:30px;
+}
+
+.logo{
+	width:25vw;
+}
+
+.baseline{
+	top: 25vh;
+	position: relative;
+	letter-spacing: 3px;
+	line-height: 35px;
+}
+
+.topline {
+		top: -29vh;
+		position: relative;
+		letter-spacing: 3px;
+		line-height: 35px;
+}
+
+.midline {
+		top: 0vh;
+		position: relative;
+		letter-spacing: 3px;
+		line-height: 35px;
+}
+
+.mobileleap{
+	height:100vh;
+}
+
+.altbaseline{
+	top:10vh;
+}
+p{
+	font-size:14px;
+	line-height: 20px;
+	margin-top:-30vh;
+}
+
+h3{
+ font-size:22px;
+ margin-left:30vw;
+}
+
+.lockup, .lockupm{
+	display:none;
+}
+
+.arrow{
+	top:78vh;
+}
+
+.arrow img{
+	width:5vw;
+}
+
+.lockupp{
+	display:block;
+	position: fixed;
+	height: 100vh;
+	width: 90vw;
+	font-family: SweetSans;
+	margin: 0 5vw;
+	z-index:+10;
+}
+
+.footer{
+	font-size:10px;
+	top:80vh;
+}
+
+.hidden{
+	display:none;
+}
+
+
+.sevent{
+	display: none;
+}
+
+.threet{
+	margin-left:30vw;
+	width:60vw;
+}
+
+.ninet{
+	display:block;
+	top:-40vh;
+}
+
+.nine{
+	top:22vh;
+}
+
+.name{
+	font-size:55px;
+	letter-spacing: 20px;
+}
+
+.leapline{
+	width:50vw;
+}
+
+.altbody{
+	display:flex;
+	flex-direction: column;
+}
+
+.altbody .col-4{
+	margin-bottom:20px;
+}
+
+.dten{
+display:block;
+flex-direction: row;
+margin-top:30vh;
+}
+
+.dten .col-8{
+	display:inline-block;
+	width:38vw;
+}
+
+.dten .col-4{
+	display:inline-block;
+	width:55vw;
+}
+
+.ten{
+	top:-2vh;
+}
+
+.tent{
+	top:16vh;
+}
+
+.basesection{
+	height:178vh;
+	top:963vh;
+	z-index:+11;
+}
+
+.eight{
+	height:50vh;
+}
+
+.altfooter{
+	top:20vh;
+	display:flex;
+	flex-direction: column;
+}
+
+.altfooter .col-7, .altfooter .col-4, .altfooter .col-1{
+	margin-top:20px;
+}
+
+#top{
+text-align:center;
+}
+
+
+}
+
+
+/*phone portrait*/
 @media screen and (max-width: 620px){
 body{
 	  flex-direction: column;
@@ -431,7 +622,7 @@ h3{
  margin-left:30vw;
 }
 
-.lockup{
+.lockup, .lockupp{
 	display:none;
 }
 
