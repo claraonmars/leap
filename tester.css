@@ -370,7 +370,7 @@ body{
 
 canvas[resize] {
     width: 130%;
-    height: 110%;
+    height: 50%;
     position:fixed;
     margin-left: -30%;
     top:-45vh;
