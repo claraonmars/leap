@@ -6,7 +6,7 @@
           if (isSafari) {
            $.scrollify({
             section : ".scroll",
-            interstitialSection: ".basesection, .tnc, .privacy, .lockup, .lockupm, .lockupp, .logo",
+            interstitialSection: ".basesection",
             standardScrollElements:'.basesection',
             scrollSpeed: 1000,
             touchScroll: false
@@ -14,7 +14,7 @@
     }else{
         $.scrollify({
             section : ".scroll",
-            interstitialSection: ".basesection, .tnc, .privacy, .lockup, .lockupm, .lockupp, .logo",
+            interstitialSection: ".basesection",
             standardScrollElements:'.basesection',
             scrollSpeed: 1000
           });
