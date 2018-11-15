@@ -373,6 +373,7 @@ canvas[resize] {
     height: 100%;
     position:fixed;
     margin-left: -30%;
+    top:30vh;
 }
 
 .col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
