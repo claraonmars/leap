@@ -419,12 +419,12 @@ canvas[resize] {
 }
 
 .altbaseline{
-	top:10vh;
+	top:6vh;
 }
 p{
 	font-size:14px;
 	line-height: 20px;
-	margin-top:-30vh;
+	margin-top:-50vh;
 }
 
 h3{
