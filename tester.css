@@ -137,7 +137,7 @@ h5{
 				z-index:+10;
 }
 
-.lockupm, .lockupp, .signupp{
+.lockupm, .lockupp, .signupp, .sevenp{
 	display:none;
 }
 
@@ -463,6 +463,9 @@ h3{
 	display:none;
 }
 
+.sevenp{
+	display:block;
+}
 
 .sevent{
 	display: none;
@@ -529,7 +532,7 @@ margin-top:30vh;
 }
 
 .button{
-	width:32%;
+	width:100%;
 }
 
 .signupp{
@@ -634,7 +637,7 @@ h3{
  margin-left:30vw;
 }
 
-.lockup, .lockupp, .signupp{
+.lockup, .lockupp, .signupp, .sevenp{
 	display:none;
 }
 
