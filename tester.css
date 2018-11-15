@@ -370,10 +370,10 @@ body{
 
 canvas[resize] {
     width: 130%;
-    height: 90%;
+    height: 50%;
     position:fixed;
     margin-left: -30%;
-    top:-50vh;
+    top:-45vh;
 }
 
 .col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
