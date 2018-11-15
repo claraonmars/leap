@@ -1,5 +1,4 @@
  var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-    alert('110%');
 
 
 (function($) {
