@@ -456,7 +456,7 @@ h3{
 
 .footer{
 	font-size:10px;
-	top:72vh;
+	top:74vh;
 }
 
 .hidden{
@@ -465,6 +465,10 @@ h3{
 
 .sevenp{
 	display:block;
+}
+
+.seven{
+	display: inline-block;
 }
 
 .sevent{
@@ -533,6 +537,12 @@ margin-top:30vh;
 
 .button{
 	width:100%;
+}
+
+.mc-half{
+		width:50%;
+		margin-right:5%;
+		display: inline-block;
 }
 
 .signupp{
