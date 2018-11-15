@@ -508,7 +508,7 @@ margin-top:30vh;
 
 .dten .col-8{
 	display:inline-block;
-	width:40vw;
+	width:46vw;
 }
 
 .dten .col-4{
@@ -517,7 +517,7 @@ margin-top:30vh;
 }
 
 .ten{
-	top:2vh;
+	top:20vh;
 }
 
 .tent{
@@ -526,6 +526,10 @@ margin-top:30vh;
 
 .tent h5, .tent h6{
 	display:none;
+}
+
+.button{
+	width:32%;
 }
 
 .signupp{
