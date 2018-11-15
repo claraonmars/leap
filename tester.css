@@ -464,11 +464,8 @@ h3{
 }
 
 .sevenp{
-	display:block;
-}
+		display: inline-block;
 
-.seven{
-	display: inline-block;
 }
 
 .sevent{
@@ -669,7 +666,7 @@ h3{
 }
 
 
-.sevent{
+.seventleap{
 	display: none;
 }
 
