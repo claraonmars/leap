@@ -7,6 +7,7 @@
            $.scrollify({
             section : ".scroll",
             interstitialSection: ".basesection, .tnc, .privacy, .lockup, .lockupm, .lockupp, .logo",
+            standardScrollElements:'.basesection',
             scrollSpeed: 1000,
             touchScroll: false
           });
@@ -14,6 +15,7 @@
         $.scrollify({
             section : ".scroll",
             interstitialSection: ".basesection, .tnc, .privacy, .lockup, .lockupm, .lockupp, .logo",
+            standardScrollElements:'.basesection',
             scrollSpeed: 1000
           });
     }
