@@ -710,6 +710,8 @@ margin-top:20vh;
 .basesection{
 	height:140vh;
 	top:963vh;
+		z-index:+11;
+
 }
 
 .eight{
