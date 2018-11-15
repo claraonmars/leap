@@ -13,7 +13,7 @@
     }else{
         $.scrollify({
             section : ".scroll",
-            interstitialSection: ".basesection",
+            interstitialSection: ".basesection, .tnc, .privacy, .lockup, .lockupm, .lockupp, .logo",
             scrollSpeed: 1000
           });
     }
