@@ -465,7 +465,10 @@ h3{
 
 .sevenp{
 		display: inline-block;
+}
 
+.dseven .col-6{
+	width:50%;
 }
 
 .sevent{
