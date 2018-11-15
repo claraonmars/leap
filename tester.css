@@ -704,7 +704,7 @@ h3{
 .dten{
 display:block;
 flex: none;
-margin-top:28vh;
+margin-top:25vh;
 }
 
 .basesection{
@@ -724,6 +724,10 @@ margin-top:28vh;
 
 .altfooter .col-7, .altfooter .col-4, .altfooter .col-1{
 	margin-top:20px;
+}
+
+.button{
+	width:30%;
 }
 
 #top{
