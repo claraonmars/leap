@@ -3,22 +3,14 @@
 
 (function($) {
 
-          if (isSafari) {
-           $.scrollify({
-            section : ".scroll",
-            interstitialSection: ".basesection",
-            standardScrollElements:'.basesection',
-            scrollSpeed: 1000,
-            touchScroll: false
-          });
-    }else{
+
         $.scrollify({
             section : ".scroll",
             interstitialSection: ".basesection",
             standardScrollElements:'.basesection',
             scrollSpeed: 1000
           });
-    }
+
 
 
 
