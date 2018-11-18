@@ -13,7 +13,7 @@
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="paper-full.js"></script>
     <script type="text/paperscript" canvas="canvas">
-        var points = 8;
+    var points = 8;
     var myPath = createLine();
     var center;
 
@@ -40,10 +40,9 @@
         return path;
     }
 
+
      function onResize(event) {
-      path.position.y = view.center.y + 165;
-      path.position.x = view.center.x;
-      path.fitBounds = view.bounds;
+
     }
 
     function isMobileDevice() {
@@ -479,11 +478,11 @@
                         <div class="basesection">
                             <div class="wrapper">
                                 <div class="row altbody">
-                                    <div class="col-4">
+                                    <div class="col-4 base-full">
                                         Location<br><br>
                                         <div id="map"></div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-4 base-inline">
                                         Contact<br><br>
                                         <div class="contact">
                                             115 AMOY STREET<br>
@@ -493,7 +492,7 @@
                                             F: +65 6939 6262
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-4 base-inline">
                                         Connect<br><br>
                                         <a href="#"><img class="linkedin" src='linkedin-logo.png'></a>
                                     </div>

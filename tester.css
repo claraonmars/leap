@@ -24,6 +24,7 @@ canvas[resize] {
     height: 100%;
     position:fixed;
     margin-left:5%;
+    top:0vh;
 }
 
 /*.two, .three, .threet, .four, .five, .six, .seven, .sevent, .nine, .ninet, .ten, .tent, .hidden{
@@ -541,9 +542,10 @@ margin-top:30vh;
 }
 
 .basesection{
-	height:190vh;
+	height:250vh;
 	top:963vh;
 	z-index:+11;
+	width:100vw!important;
 }
 
 .eight{
@@ -571,6 +573,14 @@ text-align:center;
 .mc-half{
 	width:47%;
 	margin-right:0;
+}
+
+#map {
+		height: 90vh;
+		/* The height is 400 pixels */
+		width: 100%;
+		/* The width is the width of the web page */
+		z-index: +10;
 }
 
 
