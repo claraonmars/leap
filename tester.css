@@ -523,6 +523,7 @@ margin-top:30vh;
 
 .ten{
 	top:18vh;
+	line-height: 28px;
 }
 
 .tent{
@@ -539,6 +540,11 @@ margin-top:30vh;
 
 .signupp{
 	display:block;
+	margin-top:9px;
+}
+
+.signupp h5, .signupp h6{
+	line-height: 18px;
 }
 
 .basesection{
