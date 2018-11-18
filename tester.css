@@ -498,11 +498,16 @@ h3{
 
 .altbody{
 	display:flex;
-	flex-direction: column;
-}
+/*	flex-direction: column;
+*/}
 
 .altbody .col-4{
 	margin-bottom:20px;
+}
+
+.altbody .base-full{
+	max-width:94%;
+	flex:none;
 }
 
 .dten{
