@@ -18,7 +18,6 @@ $(window).bind('resize', function(e)
 
         $.scrollify({
             section : ".scroll",
-            interstitialSection: ".basesection",
             standardScrollElements:'.basesection',
             scrollSpeed: 1000
           });

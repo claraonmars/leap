@@ -380,6 +380,8 @@ label{
 body{
 	  flex-direction: column;
 	  overflow-x: hidden;
+	  overscroll-behavior-y: none!important;
+
 }
 
 canvas[resize] {
