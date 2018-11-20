@@ -168,7 +168,6 @@
                 myPath.smooth({ type: 'continuous' });
                 }
                 else{
-                myPath.strokeColor = '#003DA6';
                 myPath.segments[3].point.y += 0.05;
                 myPath.segments[4].point.y += 0.15;
                 myPath.segments[5].point.y += 0.25;
@@ -183,7 +182,6 @@
 
 
             else if (i > (bodyheight/11)*7 && i <= (bodyheight/11)*8){
-            if(isMobileDevice() !== "false"){
                 myPath.segments[0].point.y = center.y + 165;
                 myPath.segments[1].point.y = center.y + 165;
                 myPath.segments[2].point.y = center.y + 165;
@@ -196,10 +194,7 @@
                 myPath.segments[9].point.y = center.y + 165;
 
                 myPath.smooth({ type: 'continuous' });
-            }else{
-                myPath.strokeColor = '#003DA6';
              }
-            }
 
         }
 
