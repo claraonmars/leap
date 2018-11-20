@@ -20,7 +20,7 @@ body {
 		color: white;
 		overflow-x: hidden;
 		display:flex;
-		  overscroll-behavior: none;
+		overscroll-behavior-y: none!important;
 
 }
 
@@ -53,7 +53,7 @@ canvas[resize] {
 		width: 100vw;
 		height: 100vh;
 		top: 900vh;
-		z-index: +10;
+		z-index: +12;
 		font-family: SweetSans;
 }
 
@@ -126,7 +126,6 @@ h5{
 		letter-spacing: 3px;
 				line-height: 52px;
 
-
 }
 
 .wrapper {
@@ -141,7 +140,6 @@ h5{
 		width: 90vw;
 		font-family: SweetSans;
 		margin: 0 5vw;
-				z-index:+10;
 }
 
 .lockupm, .lockupp, .signupp, .sevenp{
@@ -245,10 +243,12 @@ label{
 }
 
 .arrow {
-		top: 80vh;
-		position: relative;
+		top: 90vh;
+		position: fixed;
 		text-align: center;
 		margin:0 auto;
+		z-index: +11;
+		width:100vw;
 }
 
 .arrow img{
@@ -388,6 +388,7 @@ canvas[resize] {
     position:fixed;
     margin-left: -30%;
     top:-40vh;
+    z-index:-1;
 }
 
 .col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
@@ -400,7 +401,7 @@ canvas[resize] {
 
 .main{
 	flex-direction: column;
-	font-size:24px;
+	font-size:21px;
 }
 
 .logo{
@@ -411,21 +412,21 @@ canvas[resize] {
 	top: 25vh;
 	position: relative;
 	letter-spacing: 3px;
-	line-height: 35px;
+	line-height: 25px;
 }
 
 .topline {
 		top: -29vh;
 		position: relative;
 		letter-spacing: 3px;
-		line-height: 35px;
+		line-height: 25px;
 }
 
 .midline {
 		top: 0vh;
 		position: relative;
 		letter-spacing: 3px;
-		line-height: 35px;
+		line-height: 25px;
 }
 
 .mobileleap{
@@ -451,7 +452,7 @@ h3{
 }
 
 .arrow{
-	top:72vh;
+	top:85vh;
 }
 
 .arrow img{
@@ -520,6 +521,11 @@ h3{
 .altbody .base-full{
 	max-width:94%;
 	flex:none;
+}
+
+.dnine{
+	background-color: #003DA6;
+	z-index:+10;
 }
 
 .dten{
@@ -622,6 +628,7 @@ canvas[resize] {
     height: 95%;
     position:fixed;
     margin-left: -50%;
+    z-index: -1;
 }
 
 .col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
