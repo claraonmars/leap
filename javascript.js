@@ -17,6 +17,34 @@ $(window).bind('resize', function(e)
           });
 
 
+$('.arrow').click(function() {
+       var target;
+       $(".arrowdown").each(function(i, element) {
+         target = $(element).offset().top;
+         if (target - 10 > $(document).scrollTop()) {
+           return false; // break
+         }
+       });
+       $("html, body").animate({
+         scrollTop: target
+    }, 500);
+    });
+
+
+$('.logo').click(function() {
+       var target;
+       $("html, body").animate({
+         scrollTop: 0
+    }, 300);
+    });
+
+$('.top').click(function() {
+       var target;
+       $("html, body").animate({
+         scrollTop: 0
+    }, 300);
+    });
+
 
 
 })(jQuery);
@@ -59,8 +87,5 @@ function exitprivacy() {
 }
 
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+
+

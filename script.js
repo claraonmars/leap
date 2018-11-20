@@ -180,9 +180,12 @@ function initMap() {
     }
 ]});
   // The marker, positioned at Uluru
-    var image = 'marker-01.png';
+    // var image = 'marker-01.png';
 
-  var marker = new google.maps.Marker({position: uluru, map: map, animation: google.maps.Animation.DROP, icon: image});
+    let url = "http://maps.google.com/mapfiles/ms/icons/";
+  url += "blue-dot.png";
+
+  var marker = new google.maps.Marker({position: uluru, map: map, animation: google.maps.Animation.DROP, icon: url});
 }
 
 

@@ -8,6 +8,11 @@
 		src: url("./Sweet-SweetSans-Light.otf") format('opentype');
 }
 
+@font-face {
+		font-family: STTOriginal;
+		src: url("./Texta-Regular.otf") format('opentype');
+}
+
 body {
 		margin: 0;
 		background-color: #003DA6;
@@ -15,6 +20,7 @@ body {
 		color: white;
 		overflow-x: hidden;
 		display:flex;
+		  overscroll-behavior: none;
 
 }
 
@@ -227,6 +233,7 @@ label{
 
 .contact{
 	font-size:17px;
+	text-transform: none;
 }
 
 .footer {
@@ -361,6 +368,11 @@ label{
 
 .mobileleap{
 	display: none;
+}
+
+.stmedia{
+	font-family: STTOriginal;
+	font-size:13px;
 }
 
 /*phone landscape, tablet portrait*/
