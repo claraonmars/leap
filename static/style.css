@@ -1,0 +1,291 @@
+@font-face {
+    font-family: "wigrum";
+    src: url('./wigrumweb-regular.woff') format('woff2');
+}
+
+@font-face {
+    font-family: SweetSans;
+    src: url("./Sweet-SweetSans-Light.otf") format('opentype');
+}
+
+
+
+
+html,
+body {
+    margin: 0;
+    background-color: #003DA6;
+    font-family: SweetSans;
+
+}
+
+img{
+	width: 100%;
+}
+
+
+h1{
+	font-family: Wigrum, sans-serif;
+}
+
+
+#map {
+  height: 40vh;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+  z-index: +10;
+ }
+
+.container{
+width:90vw;
+margin: 0 auto;
+}
+
+.logo{
+	position: fixed;
+	width:15vw;
+	margin-top:5vh;
+	z-index:+5;
+	}
+
+	.logo img{
+		width:100%;
+	}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 90%;
+    height: 100%;
+    position:fixed;
+    margin-left:5%;
+}
+
+.last_section{
+	background-color: rgb(0,15,108);
+	z-index: +1;
+	height:100vh;
+	position: relative;
+}
+
+.wrapper{
+	height:100vh;
+}
+
+#mc_embed_signup{
+	background-color: rgba(0,0,0,0)!important;
+}
+
+.mailerform{
+	margin-top:30px;
+}
+
+.first{
+	position:relative;
+	top:30vh;
+	color:white;
+}
+
+.second{
+	position:relative;
+	top:30vh;
+	width:40vw;
+	margin: 0 40vw 0 20vw;
+	color:white;
+	font-size: 25px;
+}
+
+.third{
+	position:relative;
+	top:30vh;
+	width:50vw;
+	margin: 0 10vw 0 40vw;
+	color:white;
+	font-size: 25px;
+}
+
+.thirdmid{
+	position:relative;
+	top:40vh;
+	width:40vw;
+	margin: 0 10vw 0 50vw;
+	color:white;
+	font-size: 25px;
+}
+
+.fourth{
+	position: relative;
+	color: white;
+	font-size: 25px;
+	top:30vh;
+}
+
+.fifth{
+	position: relative;
+	color: white;
+	font-size: 25px;
+	top:60vh;
+	width:40vw;
+	margin: 0 10vw 0 50vw;
+}
+
+.fourth h1{
+		font-family: Wigrum;
+		font-size:50px;
+		padding-top:0!important;
+}
+
+.fourth .right{
+	font-family: Wigrum;
+}
+
+
+span.leap{
+	letter-spacing:20px;
+	text-transform: uppercase;
+}
+
+.first .left{
+		font-size:30px;
+		width: 50%;
+
+}
+
+.first .left h1{
+	margin-top: 0px!important;
+	padding:0!important;
+}
+
+.inner{
+	margin-left:5%;
+	position: relative;
+	height:100vh;
+	font-size:14px;
+}
+
+.column{
+	width:29vw;
+	height: 60vh;
+	margin:20vh auto;
+	display: inline-block;
+	position:relative;
+	vertical-align: top;
+	color: white;
+}
+
+.footer{
+	position: fixed;
+	bottom:12vh;
+	color:white;
+	display: block;
+	width: 90%;
+	text-transform: uppercase;
+	font-size:10px;
+}
+
+
+.altfooter{
+	bottom:5vh;
+	color:white;
+	display: inline-block;
+	width: 90%;
+	position: absolute;
+	left: 0;
+	margin:0;
+	padding:0;
+		font-size:10px;
+
+}
+
+.altfooter .left{
+	width:29vw;
+}
+
+.footer .left{
+	width:20%;
+
+}
+
+.column .left{
+ width:40%;
+}
+
+.column.maincopy{
+	font-size:22px;
+}
+
+.leftcent{
+	width:50%;
+	padding-left:5%;
+	float:left;
+	position: relative;
+	display: inline-block;
+	height:20%;
+}
+
+.pad{
+	width:90%;
+	position: relative;
+	display: inline-block;
+}
+
+.connect{
+	width:40px;
+}
+
+.connect img{
+	width: 100%;
+}
+
+
+input{
+	width:10vw;
+	margin-top:10px;
+}
+
+input.button{
+	width:30%;
+	border: none;
+  border-radius: 0px;
+  background-color: #ED7557;
+  color: white;
+}
+
+.left{
+	float:left;
+	position: relative;
+	display: inline-block;
+	height:20%;
+}
+
+.right{
+	float:right;
+	right:0;
+	position: relative;
+	width:40%;
+}
+
+.bottomright{
+	float:right;
+	right:0;
+	position: relative;
+	width:40px;
+}
+
+.bottomright img{
+	width: 100%;
+}
+
+.signup{
+	display: inline-block;
+	width:100%;
+}
+
+
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
