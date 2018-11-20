@@ -391,10 +391,10 @@ body{
 
 canvas[resize] {
     width: 195%;
-    height: 80%;
+    height: 70%;
     position:fixed;
     margin-left: -36%;
-    top:2vh;
+    top:0vh;
 }
 
 .col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
@@ -637,6 +637,7 @@ canvas[resize] {
     height: 95%;
     position:fixed;
     margin-left: -50%;
+    top:2vh;
 }
 
 .col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
