@@ -390,11 +390,11 @@ body{
 }
 
 canvas[resize] {
-    width: 195%;
-    height: 70%;
+    width: 200%;
+    height: 80%;
     position:fixed;
     margin-left: -36%;
-    top:0vh;
+    top:2vh;
 }
 
 .col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
@@ -448,7 +448,7 @@ canvas[resize] {
 
 .altbaseline{
 	top:6vh;
-	margin-left:10vw;
+	margin-left:12vw;
 }
 p{
 	font-size:14px;
