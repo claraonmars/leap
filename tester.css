@@ -389,7 +389,7 @@ canvas[resize] {
     height: 110%;
     position:fixed;
     margin-left: -30%;
-    top:-40vh;
+    top:-35vh;
     z-index:-1;
 }
 
