@@ -120,6 +120,13 @@ h5{
 
 }
 
+.thankline {
+		top: 40vh;
+		position: relative;
+		letter-spacing: 3px;
+		line-height: 55px;
+}
+
 .altbaseline {
 		top: 55vh;
 		position: relative;
@@ -234,12 +241,20 @@ label{
 	text-transform: none;
 }
 
+.contact .number{
+	font-size: 18px;
+}
+
 .footer {
 		top: 78vh;
 		position: relative;
 		text-transform: uppercase;
 		font-size: 12px;
 		letter-spacing: 2px;
+}
+
+.footer .number{
+	font-size: 13px;
 }
 
 .arrow {
@@ -289,6 +304,7 @@ label{
 	width:auto;
 	height:auto;
 }
+
 
 .tnc{
 	width:100vw;
@@ -373,6 +389,18 @@ label{
 .stmedia{
 	font-family: STTOriginal;
 	font-size:13px;
+}
+
+.thanks{
+	font-family: Wigrum;
+	font-size: 52px;
+	text-align: center;
+}
+
+.again{
+	font-size: 30px;
+	text-align: center;
+
 }
 
 /*phone landscape, tablet portrait*/
@@ -474,6 +502,10 @@ h3{
 .footer{
 	font-size:10px;
 	top:74vh;
+}
+
+.footer .number{
+	font-size: 11px;
 }
 
 .hidden{
@@ -710,6 +742,10 @@ h3{
 .footer{
 	font-size:10px;
 	top:80vh;
+}
+
+.footer .number{
+	font-size: 11px;
 }
 
 .hidden{

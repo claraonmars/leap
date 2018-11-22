@@ -67,6 +67,16 @@ $(window).scroll(function() {
 });
 }
 
+$('#mc-embedded-subscribe').click(function() {
+       document.querySelector('#thankyou').style.display='block'
+    });
+
+$('#clearthankyou').click(function() {
+       document.querySelector('#thankyou').style.display='none'
+    });
+
+
+
 
 
 })(jQuery);

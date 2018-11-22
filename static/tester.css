@@ -123,8 +123,14 @@ h5{
 		position: relative;
 		letter-spacing: 3px;
 		line-height: 52px;
+}
 
 
+.thankline {
+		top: 40vh;
+		position: relative;
+		letter-spacing: 3px;
+		line-height: 52px;
 }
 
 .altbaseline {
@@ -380,6 +386,17 @@ label{
 .stmedia{
 	font-family: STTOriginal;
 	font-size:13px;
+}
+
+.thanks{
+	font-family: Wigrum;
+	font-size: 35px;
+	text-align: center;
+}
+
+.again{
+	font-size: 30px;
+	text-align: center;
 }
 
 /*phone landscape, tablet portrait*/
@@ -663,6 +680,8 @@ canvas[resize] {
 	letter-spacing: 3px;
 	line-height: 25px;
 }
+
+
 
 .altline{
 	top: 15vh;
