@@ -41,8 +41,17 @@ a:hover {
  cursor:pointer;
 }
 
-.lightbox:hover, #top:hover, .logo:hover, .arrow:hover{
+.lightbox:hover, .logo:hover, .arrow:hover{
 	cursor: pointer;
+}
+
+#top:hover{
+	cursor: pointer;
+}
+
+#top span:hover{
+			border-bottom:1px white solid;
+
 }
 
 .animated{
@@ -304,7 +313,6 @@ label{
 
 .lightbox:hover{
 		border-bottom:1px white solid;
-
 }
 
 #terms{
