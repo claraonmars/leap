@@ -45,12 +45,13 @@ $('.logo').click(function() {
     }, 300);
     });
 
-$('.top').click(function() {
+$('#top').click(function() {
        var target;
        $("html, body").animate({
          scrollTop: 0
     }, 300);
     });
+
 
 if (isMobile === true){
 $(window).scroll(function() {
@@ -94,6 +95,8 @@ exit.addEventListener('click', exiterms);
 function revealterms() {
     document.querySelector('.tnc').style.display = "block";
     document.body.setAttribute("overflow-y", "hidden");
+
+
 }
 
 function exiterms() {
