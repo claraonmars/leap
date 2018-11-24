@@ -55,8 +55,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
       section : '.scroll',
       sectionName:false,
       easing: "swing",
-      scrollSpeed: 600,
-      scrollbars: true,
+      scrollSpeed: 1000,
       overflowscroll: true
     };
 
