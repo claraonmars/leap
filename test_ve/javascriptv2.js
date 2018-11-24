@@ -104,8 +104,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 ///////////////////////////////////////////////////////////////////////
 
         if (isMobile === true){
-        $(window).scrollTo(0, 1);
-
         $(window).scroll(function() {
            var hT = $('.dsix').offset().top,
                hH = $('.dsix').outerHeight(),
