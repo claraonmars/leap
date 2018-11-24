@@ -13,8 +13,6 @@
 var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
 if (isSafari){
-    window.scrollTop(0)
-    alert('safari')
 
     document.body.height = window.innerHeight;
     document.body.width = window.innerWidth;
