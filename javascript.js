@@ -1,5 +1,20 @@
- var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+///////////////////////////////////////////////////////////////////////
+// Set body height as window inner viewport height
+///////////////////////////////////////////////////////////////////////
+window.onresize = function() {
+    document.body.height = window.innerHeight;
+}
+window.onresize();
 
+///////////////////////////////////////////////////////////////////////
+// Check what browser
+///////////////////////////////////////////////////////////////////////
+var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
+
+///////////////////////////////////////////////////////////////////////
+// Check if mobile
+///////////////////////////////////////////////////////////////////////
 var isMobile = false; //initiate as false
 // device detection
 if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
@@ -7,83 +22,88 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
 }
 
-
+///////////////////////////////////////////////////////////////////////
+// Check if mobile
+///////////////////////////////////////////////////////////////////////
 (function($) {
-$(window).bind('resize', function(e)
-{
-  console.log('window resized..');
-  this.location.reload(false); /* false to get page from cache */
-  /* true to fetch page from server */
-});
+        $(window).bind('resize', function(e)
+        {
+          console.log('window resized..');
+          this.location.reload(false);
+          /* false to get page from cache */
+          /* true to fetch page from server */
+        });
 
+///////////////////////////////////////////////////////////////////////
+// Initiate scrollify
+///////////////////////////////////////////////////////////////////////
         $.scrollify({
             section : ".scroll",
             interstitialSection: ".basesection",
-            standardScrollElements: ".basesection",
+            // standardScrollElements: ".basesection",
             scrollSpeed: 1000
           });
 
+///////////////////////////////////////////////////////////////////////
+// Click events
+///////////////////////////////////////////////////////////////////////
 
-$('.arrow').click(function() {
-       var target;
-       $(".arrowdown").each(function(i, element) {
-         target = $(element).offset().top;
-         if (target - 10 > $(document).scrollTop()) {
-           return false; // break
-         }
-       });
-       $("html, body").animate({
-         scrollTop: target
-    }, 500);
+        // Arrow down
+        $('.arrow').click(function() {
+               var target;
+               $(".arrowdown").each(function(i, element) {
+                 target = $(element).offset().top;
+                 if (target - 10 > $(document).scrollTop()) {
+                   return false; // break
+                 }
+               });
+               $("html, body").animate({
+                 scrollTop: target
+            }, 500);
+            });
+
+        // Logo to top
+        $('.logo').click(function() {
+               var target;
+               $("html, body").animate({
+                 scrollTop: 0
+            }, 300);
+            });
+
+        // Back to top
+        $('#top').click(function() {
+               var target;
+               $("html, body").animate({
+                 scrollTop: 0
+            }, 300);
     });
 
+///////////////////////////////////////////////////////////////////////
+// Resize canvas on mobile portrait >> landscape
+///////////////////////////////////////////////////////////////////////
 
-$('.logo').click(function() {
-       var target;
-       $("html, body").animate({
-         scrollTop: 0
-    }, 300);
-    });
-
-$('#top').click(function() {
-       var target;
-       $("html, body").animate({
-         scrollTop: 0
-    }, 300);
-    });
-
-
-if (isMobile === true){
-$(window).scroll(function() {
-   var hT = $('.dsix').offset().top,
-       hH = $('.dsix').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-     document.querySelector('#canvas').style.display='none'
-   }
-   else{
-    document.querySelector('#canvas').style.display='block'
-   }
-});
-}
-
-$('#mc-embedded-subscribe').click(function() {
-       document.querySelector('#thankyou').style.display='block'
-    });
-
-$('#clearthankyou').click(function() {
-       document.querySelector('#thankyou').style.display='none'
-    });
-
-
-
-
+        if (isMobile === true){
+        $(window).scroll(function() {
+           var hT = $('.dsix').offset().top,
+               hH = $('.dsix').outerHeight(),
+               wH = $(window).height(),
+               wS = $(this).scrollTop();
+           if (wS > (hT+hH-wH)){
+             document.querySelector('#canvas').style.display='none'
+           }
+           else{
+            document.querySelector('#canvas').style.display='block'
+           }
+        });
+    }
 
 })(jQuery);
 
 
 
+///////////////////////////////////////////////////////////////////////
+// Lightbox reveals
+///////////////////////////////////////////////////////////////////////
 
 // on click terms & conditions
 var terms = document.querySelector("#terms");
@@ -95,8 +115,6 @@ exit.addEventListener('click', exiterms);
 function revealterms() {
     document.querySelector('.tnc').style.display = "block";
     document.body.setAttribute("overflow-y", "hidden");
-
-
 }
 
 function exiterms() {
@@ -110,7 +128,6 @@ pterms.addEventListener('click', revealp);
 
 var exitp = document.querySelector("#exitprivacy");
 exitp.addEventListener('click', exitprivacy);
-
 
 function revealp() {
     document.querySelector('.privacy').style.display = "block";
