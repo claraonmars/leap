@@ -36,8 +36,8 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         $(window).bind('resize', function(e)
         {
 
-            let vh = window.innerHeight * 0.01;
-         document.documentElement.style.setProperty('--vh', `${vh}px`);
+         let vh = window.innerHeight * 0.01;
+         document.querySelector('.main').style.height(`${vh}px`);
           console.log('window resized..');
           this.location.reload(false);
 
