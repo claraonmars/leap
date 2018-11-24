@@ -13,7 +13,6 @@
 var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
 if (isSafari){
-
     document.body.height = window.innerHeight;
     document.body.width = window.innerWidth;
 }
@@ -38,6 +37,8 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         {
           console.log('window resized..');
           this.location.reload(false);
+            window.scrollTop(0)
+
           /* false to get page from cache */
           /* true to fetch page from server */
         });
