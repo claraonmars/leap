@@ -276,6 +276,7 @@ label{
 		font-size: 12px;
 		letter-spacing: 2px;
 		z-index:+13;
+
 }
 
 .footer .col-4, .footer .col-3, .footer .col-2{
@@ -315,6 +316,7 @@ label{
 		font-size: 12px;
 		width:90vw;
 		margin: 0 5vw;
+		height:10vh;
 		font-family: Wigrum;
 }
 

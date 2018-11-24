@@ -38,12 +38,33 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 ///////////////////////////////////////////////////////////////////////
 // Initiate scrollify
 ///////////////////////////////////////////////////////////////////////
-        $.scrollify({
-            section : ".scroll",
-            interstitialSection: ".deleven",
-            standardScrollElements: ".deleven",
-            scrollSpeed: 1000
-          });
+        // $.scrollify({
+        //     section : ".scroll",
+        //     interstitialSection: ".deleven",
+        //     standardScrollElements: ".deleven",
+        //     scrollSpeed: 1000
+        //   });
+
+
+
+    'use strict';
+    var $section = $('.scroll');
+    var $pager = $('#js-pager');
+
+    var option = {
+      section : '.scroll',
+      sectionName:false,
+      easing: "swing",
+      scrollSpeed: 600,
+      scrollbars: true,
+      overflowscroll: true
+    };
+
+    $(document).ready(function(e){
+        $.scrollify(option);
+    });
+
+
 
 ///////////////////////////////////////////////////////////////////////
 // Click events
