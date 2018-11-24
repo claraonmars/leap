@@ -41,7 +41,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         $.scrollify({
             section : ".scroll",
             interstitialSection: ".deleven",
-            // standardScrollElements: ".deleven",
+            standardScrollElements: ".deleven",
             scrollSpeed: 1000
           });
 
