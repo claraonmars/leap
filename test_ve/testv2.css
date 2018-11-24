@@ -700,7 +700,7 @@ body{
 
 canvas[resize] {
     width: 210%;
-    height: 95%;
+    height: 80vh;
     position:fixed;
     margin-left: -50%;
     z-index: -1;
@@ -726,7 +726,7 @@ canvas[resize] {
 }
 
 .baseline{
-	top: 25vh;
+	top: 21vh;
 	position: relative;
 	letter-spacing: 3px;
 	line-height: 35px;
@@ -768,6 +768,11 @@ h3{
 	display:none;
 }
 
+.arrow{
+	z-index:+12;
+	top:85vh;
+}
+
 .arrow img{
 	width:10vw;
 }
@@ -783,6 +788,7 @@ h3{
 }
 
 .footer{
+	top:73vh;
 	font-size:10px;
 }
 
