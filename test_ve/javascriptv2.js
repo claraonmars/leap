@@ -13,8 +13,11 @@
 var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
 if (isSafari){
+    window.scrollTop(0)
+    alert('safari')
+
     document.body.height = window.innerHeight;
-     document.body.width = window.innerWidth;
+    document.body.width = window.innerWidth;
 }
 
 
@@ -29,9 +32,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 }
 
 ///////////////////////////////////////////////////////////////////////
-// Check if mobile
+// Resize on portrait to landscape switch
 ///////////////////////////////////////////////////////////////////////
 (function($) {
+
         $(window).bind('resize', function(e)
         {
           console.log('window resized..');
