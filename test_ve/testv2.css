@@ -687,6 +687,16 @@ text-align:center;
 		z-index: +10;
 }
 
+.linkedin {
+		width: 27px;
+		height: 27px;
+		object-fit: contain;
+}
+
+.linkedin img {
+		width: 100%;
+}
+
 
 }
 
