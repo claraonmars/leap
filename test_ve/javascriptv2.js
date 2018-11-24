@@ -37,7 +37,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         {
           console.log('window resized..');
           this.location.reload(false);
-            window.scrollTop(0)
+            window.scrollTop(10)
 
           /* false to get page from cache */
           /* true to fetch page from server */
