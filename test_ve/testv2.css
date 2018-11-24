@@ -696,6 +696,8 @@ body{
 	  flex-direction: column;
 	  overflow-x: hidden;
 	  overscroll-behavior-y: none!important;
+	  width:100vw;
+	  height:auto;
 }
 
 canvas[resize] {
