@@ -37,7 +37,8 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         {
           console.log('window resized..');
           this.location.reload(false);
-            window.scrollTop(10)
+        let vh = window.innerHeight * 0.01;
+         document.documentElement.style.setProperty('--vh', `${vh}px`);
 
           /* false to get page from cache */
           /* true to fetch page from server */
