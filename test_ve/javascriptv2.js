@@ -12,6 +12,11 @@
 ///////////////////////////////////////////////////////////////////////
 var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
+if (isSafari){
+    document.body.height = window.innerHeight;
+     document.body.width = window.innerWidth;
+}
+
 
 ///////////////////////////////////////////////////////////////////////
 // Check if mobile
