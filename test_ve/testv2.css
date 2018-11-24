@@ -842,7 +842,7 @@ margin-top:15vh;
 }
 
 .deleven{
-	height:200vh!important;
+	height:150vh!important;
 	margin:0;
 }
 
@@ -882,6 +882,16 @@ margin-top:15vh;
 
 .button{
 	width:30%;
+}
+
+.linkedin {
+		width: 27px;
+		height: 27px;
+		object-fit: contain;
+}
+
+.linkedin img {
+		width: 100%;
 }
 
 #top{
