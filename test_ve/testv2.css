@@ -476,7 +476,7 @@ canvas[resize] {
 	font-size:21px;
 	height:100vh;
 	height: calc(var(--vh, 1vh) * 100)!important;
-	border:green 1px solid;
+	border:white 1px solid;
 }
 
 .logo{
@@ -545,7 +545,7 @@ h3{
 }
 
 .footer{
-	top:70%;
+	top:50%;
 	font-size:10px;
 	position: fixed;
 	width: 90vw;
