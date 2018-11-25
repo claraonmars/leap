@@ -1352,6 +1352,13 @@ margin-top:15vh;
 text-align:left;
 }
 
+.popup{
+	width:75vw;
+}
 
+.text{
+	width:65vw;
+	height:88%;
+}
 
 }
