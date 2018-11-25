@@ -648,6 +648,234 @@ p{
 
 }
 
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) { canvas[resize] {
+    width: 130%;
+    height: 110%;
+    position:fixed;
+    margin-left: -30%;
+    top:-35vh;
+    z-index:-1;
+}
+
+.col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
+	padding:0;
+	max-width:100%;
+}
+.mobileleap{
+	display: none;
+}
+
+.main{
+	flex-direction: column;
+	font-size:21px;
+	height:100vh;
+	width:;
+	border:green 1px solid;
+}
+
+.logo{
+	width:20vw;
+	z-index: +14;
+}
+
+.baseline{
+	top: 25vh;
+	position: relative;
+	letter-spacing: 3px;
+	line-height: 25px;
+}
+
+.topline {
+		top: -29vh;
+		position: relative;
+		letter-spacing: 3px;
+		line-height: 25px;
+}
+
+.midline {
+		top: 0vh;
+		position: relative;
+		letter-spacing: 3px;
+		line-height: 25px;
+}
+
+.altbaseline{
+	top:0vh;
+}
+p{
+	font-size:14px;
+	line-height: 20px;
+	margin-top: -35vh;
+}
+
+h3{
+ font-size:22px;
+}
+
+.lockup, .lockupm{
+	display:none;
+}
+
+.arrow img{
+	width:5vw;
+}
+
+.lockupp{
+	display:block;
+	/*position: fixed;
+	height: 100vh;
+	width: 90vw;
+	font-family: SweetSans;
+	margin: 0 5vw;
+	z-index:+10;*/
+}
+
+.footer{
+	bottom:10vh;
+	font-size:10px;
+	position: fixed;
+	width: 90vw;
+	font-family: SweetSans;
+	margin: 0 5vw;
+	z-index:+10;
+}
+
+.footer .number{
+	font-size: 11px;
+}
+
+.sevenp{
+		display: inline-block;
+}
+
+.sevent{
+	display: none;
+}
+.ninet{
+	display:block;
+	top:-40vh;
+}
+
+.nine{
+	top:22vh;
+}
+
+.name{
+	font-size:38px;
+	letter-spacing: 20px;
+}
+.leapline{
+	width:50vw;
+}
+
+.altbody{
+	display:flex;
+/*	flex-direction: column;
+*/}
+
+.altbody .col-4{
+	margin-bottom:20px;
+	max-width: 33.333333%;
+}
+
+.altbody .base-full{
+	max-width:94%;
+	flex:none;
+}
+
+.ten{
+	top:18vh;
+	line-height: 28px;
+}
+
+.tent{
+	top:16vh;
+}
+
+.tent h5, .tent h6{
+	display:none;
+}
+
+.signupp{
+	display:block;
+	margin-top:9px;
+}
+
+.signupp h5, .signupp h6{
+	line-height: 18px;
+}
+
+.dten{
+display:block;
+flex-direction: row;
+margin-top:30vh;
+}
+
+.dten .col-8{
+	display:inline-block;
+	width:35vw;
+}
+
+.dten .col-4{
+	display:inline-block;
+	width:30vw;
+}
+
+.deleven{
+	width:100vw;
+	height:220vh!important;
+	margin-left:0;
+}
+
+.eight{
+	height:50vh;
+}
+
+.altfooter{
+	top:20vh;
+	/*display:flex;
+	flex-direction: column;*/
+}
+
+.altfooter .col-7, .altfooter .col-1{
+	margin-top:20px;
+}
+
+#top{
+text-align:center;
+}
+
+#mce-MMERGE2 {
+		width:96%;
+}
+
+.mc-half{
+	width:47%;
+	margin-right:0;
+}
+
+#map {
+		height: 90vh;
+		/* The height is 400 pixels */
+		width: 100%;
+		/* The width is the width of the web page */
+		z-index: +10;
+}
+
+.linkedin {
+		width: 27px;
+		height: 27px;
+		object-fit: contain;
+}
+
+.linkedin img {
+		width: 100%;
+}}
+
+
 /*phone landscape*/
 @media only screen
 and (min-device-width : 375px)
