@@ -59,6 +59,8 @@ if (isMobile && isSafari){
           alert('body height='+ document.body.height);
           alert('body height='+ window.innerHeight);
 
+          document.querySelector('.main').style.height = window.innerHeight + 'px!important';
+
           /* false to get page from cache */
           /* true to fetch page from server */
         });
