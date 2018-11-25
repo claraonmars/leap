@@ -482,9 +482,10 @@ canvas[resize] {
 }
 
 .main{
-	height:100vh!important;
+	height:100%!important;
 	display:flex;
 	flex-direction: column;
+	border:green 1px solid;
 }
 
 .col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
