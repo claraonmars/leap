@@ -544,8 +544,8 @@ h3{
 }
 
 .footer{
+	height:100vh;
 	font-size:10px;
-	top:65vh;
 	position: fixed;
 	width: 90vw;
 	font-family: SweetSans;
