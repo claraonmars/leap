@@ -8,7 +8,7 @@ window.onresize = function() {
 
 
         for (var i = 0; i<main.length; i++){
-            main[i].style.height = window.innerHeight + 'px'
+            main[i].style.height = document.body.height + 'px'
         }
 }
 window.onresize();
