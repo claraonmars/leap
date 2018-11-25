@@ -474,7 +474,7 @@ canvas[resize] {
 .main{
 	flex-direction: column;
 	font-size:21px;
-	height:0vh;
+	height:100%;
 	border:red 1px solid;
 }
 
@@ -544,7 +544,7 @@ h3{
 }
 
 .footer{
-	top:70vh;
+	top:65vh;
 	font-size:10px;
 	position: fixed;
 	width: 90vw;

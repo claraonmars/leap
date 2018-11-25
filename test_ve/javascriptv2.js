@@ -1,17 +1,17 @@
 ///////////////////////////////////////////////////////////////////////
 // Set body height as window inner viewport height
 ///////////////////////////////////////////////////////////////////////
-window.onresize = function() {
-    //document.body.height = window.innerHeight;
-    //document.body.width = window.innerWidth;
-    var main = document.querySelectorAll('.main')
+// window.onresize = function() {
+//     //document.body.height = window.innerHeight;
+//     //document.body.width = window.innerWidth;
+//     var main = document.querySelectorAll('.main')
 
 
-        for (var i = 0; i<main.length; i++){
-            main[i].style.height = document.body.height + 'px'
-        }
-}
-window.onresize();
+//         for (var i = 0; i<main.length; i++){
+//             main[i].style.height = document.body.height + 'px'
+//         }
+// }
+// window.onresize();
 
 ///////////////////////////////////////////////////////////////////////
 // Check what browser
