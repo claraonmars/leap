@@ -127,6 +127,12 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
             document.querySelector('#canvas').style.display='block'
            }
         });
+
+        var main = document.querySelectorAll('.main')
+
+        for (var i = 0; i<main.length; i++){
+            main[i].style.height = iosInnerHeight() + 'px'
+        }
     }
 
 
