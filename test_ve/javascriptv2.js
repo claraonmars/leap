@@ -166,29 +166,24 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
            }
         });
 
-})(jQuery);
+    var locked = false;
 
+$('body').bind('mousewheel', function(e) {
+    if(locked) {
+        var $div = $('.text');
 
+        $div.scrollTop($div.scrollTop()
+                        - e.originalEvent.wheelDelta);
+
+        return false;
+    }
+});
 
 ///////////////////////////////////////////////////////////////////////
 // Lightbox reveals
 ///////////////////////////////////////////////////////////////////////
 
-// on click terms & conditions
-var terms = document.querySelector("#terms");
-terms.addEventListener('click', revealterms);
 
-var exit = document.querySelector("#exiterms");
-exit.addEventListener('click', exiterms);
-
-function revealterms() {
-    document.querySelector('.tnc').style.display = "block";
-    document.body.setAttribute("overflow-y", "hidden");
-}
-
-function exiterms() {
-    document.querySelector('.tnc').style.display = "none";
-}
 
 
 // on click privacy statements
@@ -200,12 +195,38 @@ exitp.addEventListener('click', exitprivacy);
 
 function revealp() {
     document.querySelector('.privacy').style.display = "block";
-    document.body.setAttribute("overflow-y", "hidden");
+        locked = !locked;
+
 }
 
 function exitprivacy() {
     document.querySelector('.privacy').style.display = "none";
+        locked = !locked;
+
 }
+
+
+// on click terms & conditions
+var terms = document.querySelector("#terms");
+terms.addEventListener('click', revealterms);
+
+var exit = document.querySelector("#exiterms");
+exit.addEventListener('click', exiterms);
+
+function revealterms() {
+    document.querySelector('.tnc').style.display = "block";
+    locked = !locked;
+}
+
+function exiterms() {
+    document.querySelector('.tnc').style.display = "none";
+    locked = !locked;
+
+}
+
+})(jQuery);
+
+
 
 
 
