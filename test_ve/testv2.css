@@ -656,7 +656,7 @@ and (orientation : landscape) { canvas[resize] {
     height: 110%;
     position:fixed;
     margin-left: -30%;
-    top:-35vh;
+    top:-30vh;
     z-index:-1;
 }
 
