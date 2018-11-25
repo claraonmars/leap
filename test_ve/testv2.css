@@ -487,7 +487,6 @@ canvas[resize] {
 	height: calc(var(--vh, 1vh) * 100);
 	display:flex;
 	flex-direction: column;
-	border:white 1px solid;
 }
 
 .col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
@@ -598,6 +597,8 @@ canvas[resize] {
 	height:100vh;
 	height: calc(var(--vh, 1vh) * 100);
 	font-size:40px;
+		border:white 1px solid;
+
 }
 
 p{
