@@ -90,7 +90,6 @@ a:hover {
 }*/
 
 .main {
-	width:100vw;
 	height: 100vh;
 	height: calc(var(--vh, 1vh) * 100);
 	font-family: Wigrum;
@@ -489,7 +488,6 @@ canvas[resize] {
 	height: calc(var(--vh, 1vh) * 100);
 	display:flex;
 	flex-direction: column;
-			border:pink 1px solid;
 
 }
 
@@ -603,7 +601,6 @@ canvas[resize] {
 	height:100vh;
 	height: calc(var(--vh, 1vh) * 100);
 	font-size:40px;
-		border:white 1px solid;
 
 }
 
@@ -1161,6 +1158,7 @@ margin-top:15vh;
 #top{
 text-align:left;
 }
+
 
 
 }
