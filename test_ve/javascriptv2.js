@@ -2,8 +2,8 @@
 // Set body height as window inner viewport height
 ///////////////////////////////////////////////////////////////////////
 window.onresize = function() {
-    document.body.height = window.innerHeight;
-    document.body.width = window.innerWidth;
+    //document.body.height = window.innerHeight;
+    //document.body.width = window.innerWidth;
     var main = document.querySelectorAll('.main')
 
 
