@@ -91,6 +91,7 @@ a:hover {
 
 .main {
 	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	font-family: Wigrum;
 	font-size: 50px;
 	line-height: 50px;
@@ -486,7 +487,7 @@ canvas[resize] {
 	height: calc(var(--vh, 1vh) * 100);
 	display:flex;
 	flex-direction: column;
-	border:black 1px solid;
+	border:white 1px solid;
 }
 
 .col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
@@ -594,6 +595,8 @@ canvas[resize] {
 	font-size:10px;
 }
 .main{
+	height:100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	font-size:40px;
 }
 
@@ -671,7 +674,8 @@ canvas[resize] {
 .main{
 	flex-direction: column;
 	font-size:21px;
-
+	height:100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	border:green 1px solid;
 }
 
@@ -943,6 +947,7 @@ canvas[resize] {
 	flex-direction: column;
 	font-size:30px;
 	height:100vh;
+	height: calc(var(--vh, 1vh) * 100);
 }
 
 .logo, .altlogo{
