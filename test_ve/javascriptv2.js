@@ -35,17 +35,17 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
 }
 
-if (isMobile && isSafari){
-    console.log('safari');
-    document.querySelector('.footer').style.top = '60vh';
-    var main = document.querySelectorAll('.main')
+// if (isMobile && isSafari){
+//     console.log('safari');
+//     document.querySelector('.footer').style.top = '60vh';
+//     var main = document.querySelectorAll('.main')
 
 
-        for (var i = 0; i<main.length; i++){
-            main[i].style.height ='90vh'
-        }
+//         for (var i = 0; i<main.length; i++){
+//             main[i].style.height ='90vh'
+//         }
 
-}
+// }
 
 ///////////////////////////////////////////////////////////////////////
 // Resize on portrait to landscape switch
