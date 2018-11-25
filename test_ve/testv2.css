@@ -544,7 +544,7 @@ h3{
 }
 
 .footer{
-	height:100vh;
+	top:0vh;
 	font-size:10px;
 	position: fixed;
 	width: 90vw;
