@@ -474,8 +474,8 @@ canvas[resize] {
 .main{
 	flex-direction: column;
 	font-size:21px;
-	height:100vh;
-	height: calc(var(--vh, 1vh) * 100)!important;
+	height:0vh;
+	border:red 1px solid;
 }
 
 .logo{
