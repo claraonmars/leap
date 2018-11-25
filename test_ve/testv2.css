@@ -527,7 +527,7 @@ h3{
 }
 
 .arrow{
-	top:85vh;
+	top:80vh;
 }
 
 .arrow img{
@@ -546,7 +546,7 @@ h3{
 
 .footer{
 	font-size:10px;
-	top:72vh;
+	top:65vh;
 	position: fixed;
 	width: 90vw;
 	font-family: SweetSans;
