@@ -52,7 +52,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 ///////////////////////////////////////////////////////////////////////
 (function($) {
 
-    $(window).scrollTo(0,1);
+    // $(window).scrollTo(0,1);
 
         $(window).bind('resize', function(e)
         {
