@@ -40,7 +40,7 @@ a:hover {
  cursor:pointer;
 }
 
-.lightbox:hover, .logo:hover, .arrow:hover{
+.lightbox:hover, .logo:hover, .arrow:hover, .exit:hover{
 	cursor: pointer;
 }
 
@@ -184,6 +184,10 @@ h5{
 
 .logo img {
 		width: 100%;
+}
+
+.altlogo{
+	display:none;
 }
 
 .leapline{
@@ -444,8 +448,191 @@ label{
 
 }
 
-/*phone landscape, tablet portrait*/
-@media only screen and (max-width:900px) and (min-width: 621px){
+/* tablet portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+canvas[resize] {
+    width: 130%;
+    height: 110%;
+    position:fixed;
+    margin-left: -30%;
+    top:0vh;
+    z-index:-1;
+}
+
+.logo, .altlogo{
+	width:25vw;
+}
+
+.logo{
+	z-index: +14;
+}
+
+.altlogo {
+	display: block;
+		position: relative;
+		top: 5vh;
+		object-fit: contain;
+		margin-left: 5vw;
+}
+
+.altlogo img {
+		width: 100%;
+}
+
+.main{
+	height:100vh!important;
+	display:flex;
+	flex-direction: column;
+}
+
+.col-1,.col-2, .col-4, .col-6, .col-5, .col-8{
+	padding:0;
+	max-width:100%!important;
+}
+
+.midline{
+	top:5vh;
+	margin-left:15vw;
+}
+
+.topline{
+	top: -29vh;
+		position: relative;
+		letter-spacing: 3px;
+	}
+
+p{
+	width:50vw;
+	margin-top:-40vh;
+	margin-left:40vw;
+}
+
+.altbaseline{
+	top:4vh;
+	margin-left:40vw;
+}
+
+.leapline{
+	top:-40vh;
+}
+
+.deleven{
+	height:120vh!important;
+	margin-left:0;
+}
+
+.altbody{
+	display: flex;
+	flex-direction: column;
+	top:10vh;
+}
+
+.altfooter{
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.base-inline{
+	margin-top:30px;
+}
+
+.ten{
+	top:30vh;
+}
+
+.tent{
+		top:-20vh;
+		width:50vw;
+
+}
+
+#top{
+	text-align: left;
+	padding: 0;
+}
+
+.stmedia{
+	max-width:50vw!important;
+	padding:0;
+}
+
+.stmedia img{
+	width:100%;
+}
+
+}
+
+/*tablet landscape*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+canvas[resize] {
+    width: 130%;
+    height: 110%;
+    position:fixed;
+    margin-left: -30%;
+    top:-5vh;
+    z-index:-1;
+}
+
+
+.footer{
+	font-size:10px;
+}
+.main{
+	font-size:40px;
+}
+
+p{
+	font-size: 18px;
+}
+
+.logo, .altlogo{
+	width:20vw;
+}
+
+.logo{
+	z-index: +14;
+}
+
+.altlogo{
+	display: block;
+
+}
+
+.three{
+	margin-left:40vw;
+}
+
+.deleven{
+	height:100vh!important;
+	display: block;
+}
+
+.altbody{
+	flex-direction: row;
+}
+
+.altfooter{
+	flex-direction: row;
+}
+
+.base-inline{
+	padding-left:20px;
+}
+
+}
+
+/*phone landscape*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape){
 body{
 	  flex-direction: column;
 	  overflow-x: hidden;
@@ -480,6 +667,7 @@ canvas[resize] {
 
 .logo{
 	width:20vw;
+	z-index: +14;
 }
 
 .baseline{
@@ -718,7 +906,7 @@ text-align:center;
 
 
 /*phone portrait*/
-@media screen and (max-width: 620px){
+@media screen and (max-width: 667px){
 body{
 	  flex-direction: column;
 	  overflow-x: hidden;
@@ -747,8 +935,25 @@ canvas[resize] {
 	height:100vh;
 }
 
-.logo{
+.logo, .altlogo{
 	width:35vw;
+}
+
+.logo{
+	z-index: +14;
+}
+
+.altlogo{
+	position: relative;
+	display:block;
+	top: 5vh;
+	object-fit: contain;
+	z-index: +14;
+	margin-left: 5vw;
+}
+
+.altlogo img{
+	width:100%;
 }
 
 .baseline{
@@ -861,6 +1066,7 @@ h3{
 .altbody{
 	display:flex;
 	flex-direction: column;
+	top:8vh;
 }
 
 .altbody .col-4{
@@ -894,7 +1100,7 @@ margin-top:15vh;
 }
 
 .altfooter{
-	top:20vh;
+	top:7vh;
 	display:flex;
 	flex-direction: column;
 	height:30vh;
