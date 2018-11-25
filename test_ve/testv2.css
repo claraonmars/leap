@@ -273,7 +273,7 @@ label{
 }
 
 .footer {
-		top: 78vh;
+		bottom: 10vh;
 		width: 90vw;
 		font-family: SweetSans;
 		margin: 0 5vw;
@@ -294,7 +294,7 @@ label{
 }
 
 .arrow {
-		top: 90vh;
+		bottom: 5vh;
 		position: fixed;
 		text-align: center;
 		margin:0 auto;
