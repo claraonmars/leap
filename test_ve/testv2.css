@@ -657,7 +657,7 @@ and (orientation : landscape) {
     height: 110%!important;
     position:fixed;
     margin-left: -30%;
-    top:-30vh!important;
+    top:-35vh!important;
     z-index:-1;
 }
 
