@@ -565,6 +565,14 @@ p{
 	width:100%;
 }
 
+.arrow{
+	top:85vh;
+}
+
+.footer{
+	top:75vh;
+}
+
 }
 
 /*tablet landscape*/
