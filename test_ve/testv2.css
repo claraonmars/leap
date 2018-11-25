@@ -476,7 +476,7 @@ canvas[resize] {
 	font-size:21px;
 	height:100vh;
 	height: calc(var(--vh, 1vh) * 100)!important;
-	border:pink 1px solid;
+	border:green 1px solid;
 }
 
 .logo{
