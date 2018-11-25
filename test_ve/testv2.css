@@ -592,13 +592,19 @@ canvas[resize] {
 
 .footer{
 	font-size:10px;
+	top:70vh;
 }
+
 .main{
 	height:100vh;
 	height: calc(var(--vh, 1vh) * 100);
 	font-size:40px;
 		border:white 1px solid;
 
+}
+
+.arrow{
+	top:80vh;
 }
 
 p{
