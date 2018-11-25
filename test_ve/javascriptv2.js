@@ -1,17 +1,20 @@
 ///////////////////////////////////////////////////////////////////////
 // Set body height as window inner viewport height
 ///////////////////////////////////////////////////////////////////////
-// window.onresize = function() {
-    //document.body.height = window.innerHeight;
-    //document.body.width = window.innerWidth;
-//     var main = document.querySelectorAll('.main')
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 
 
-//         for (var i = 0; i<main.length; i++){
-//             main[i].style.height = document.body.height + 'px'
-//         }
-// }
-// window.onresize();
 
 ///////////////////////////////////////////////////////////////////////
 // Check what browser
@@ -51,8 +54,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 // Resize on portrait to landscape switch
 ///////////////////////////////////////////////////////////////////////
 (function($) {
-
-    // $(window).scrollTo(0,1);
 
         $(window).bind('resize', function(e)
         {
