@@ -18,6 +18,17 @@
 ///////////////////////////////////////////////////////////////////////
 var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
+if (isSafari){
+    document.querySelector('.footer').style.top = '60vh';
+    var main = document.querySelectorAll('.main')
+
+
+        for (var i = 0; i<main.length; i++){
+            main[i].style.height ='90vh'
+        }
+
+}
+
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
