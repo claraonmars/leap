@@ -122,6 +122,11 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 ///////////////////////////////////////////////////////////////////////
 
         if (isMobile === true){
+        var mains=document.querySelectorAll('.main')
+        for (var i = 0;  i< mains.length; i++){
+            mains[i].style.height = $(window).innerHeight() + 'px!important'
+        }
+
         $(window).scroll(function() {
            var hT = $('.dsix').offset().top,
                hH = $('.dsix').outerHeight(),
