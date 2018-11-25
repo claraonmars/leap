@@ -57,7 +57,7 @@ if (isMobile && isSafari){
           console.log('window resized..');
           this.location.reload(false);
           alert('body height='+ document.body.height);
-          alert('body height='+ window.innerHeight);
+          alert('window height='+ window.innerHeight);
 
           document.querySelector('.main').style.height = window.innerHeight + 'px!important';
 
