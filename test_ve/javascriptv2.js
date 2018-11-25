@@ -52,13 +52,12 @@ if (isMobile && isSafari){
 ///////////////////////////////////////////////////////////////////////
 (function($) {
 
+    $(window).scrollTo(0,1);
+
         $(window).bind('resize', function(e)
         {
           console.log('window resized..');
           this.location.reload(false);
-          alert('window height='+ window.innerHeight);
-
-          $(document).querySelector('.main').style.height = $(window).innerHeight + 'px!important';
 
           /* false to get page from cache */
           /* true to fetch page from server */
