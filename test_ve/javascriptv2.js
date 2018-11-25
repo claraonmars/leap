@@ -3,8 +3,15 @@
 ///////////////////////////////////////////////////////////////////////
 window.onresize = function() {
     alert(window.innerHeight);
+    alert(document.body.height);
     document.body.height = window.innerHeight;
     document.body.width = window.innerWidth;
+    var main = document.querySelectorAll('.main')
+
+
+        for (var i = 0; i<main.length; i++){
+            main[i].style.height = window.innerHeight + 'px'
+        }
 }
 window.onresize();
 
