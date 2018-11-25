@@ -651,12 +651,13 @@ p{
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px)
-and (orientation : landscape) { canvas[resize] {
-    width: 130%;
-    height: 110%;
+and (orientation : landscape) {
+	canvas[resize] {
+    width: 130%!important;
+    height: 110%!important;
     position:fixed;
     margin-left: -30%;
-    top:-30vh;
+    top:-30vh!important;
     z-index:-1;
 }
 
@@ -673,7 +674,7 @@ and (orientation : landscape) { canvas[resize] {
 	font-size:21px;
 	height:100vh;
 	width:;
-	border:green 1px solid;
+	border:white 1px solid;
 }
 
 .logo{
@@ -693,6 +694,7 @@ and (orientation : landscape) { canvas[resize] {
 		position: relative;
 		letter-spacing: 3px;
 		line-height: 25px;
+		margin-left: 30vw;
 }
 
 .midline {
@@ -709,10 +711,12 @@ p{
 	font-size:14px;
 	line-height: 20px;
 	margin-top: -35vh;
+	margin-left: 30vw;
 }
 
 h3{
  font-size:22px;
+ margin-left: 30vw;
 }
 
 .lockup, .lockupm{
@@ -904,7 +908,7 @@ canvas[resize] {
 	font-size:21px;
 	height:100vh;
 	width:;
-	border:pink 1px solid;
+	border:red 1px solid;
 }
 
 .logo{
@@ -924,6 +928,7 @@ canvas[resize] {
 		position: relative;
 		letter-spacing: 3px;
 		line-height: 25px;
+		margin-left: 30vw;
 }
 
 .midline {
@@ -940,10 +945,12 @@ p{
 	font-size:14px;
 	line-height: 20px;
 	margin-top: -35vh;
+	margin-left: 30vw;
 }
 
 h3{
  font-size:22px;
+ margin-left: 30vw;
 }
 
 .lockup, .lockupm{
@@ -1111,7 +1118,8 @@ text-align:center;
 
 
 /*phone portrait*/
-@media screen and (max-width: 667px){
+@media only screen and (max-width: 667px)
+and (orientation : portrait){
 body{
 	  flex-direction: column;
 	  overflow-x: hidden;
