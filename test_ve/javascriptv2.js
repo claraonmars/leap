@@ -19,6 +19,7 @@
 var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
 if (isSafari){
+    console.log('safari');
     document.querySelector('.footer').style.top = '60vh';
     var main = document.querySelectorAll('.main')
 
@@ -30,10 +31,10 @@ if (isSafari){
 }
 
 
-// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+// // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+// let vh = window.innerHeight * 0.01;
+// // Then we set the value in the --vh custom property to the root of the document
+// document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 
 ///////////////////////////////////////////////////////////////////////
