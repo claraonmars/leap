@@ -563,8 +563,12 @@ p{
 	padding:0;
 }
 
+.button{
+	width:30%;
+}
+
 .stmedia img{
-	width:100%;
+	width:60%;
 }
 
 .arrow{
@@ -573,6 +577,14 @@ p{
 
 .footer{
 	top:75vh;
+}
+
+.footer .col-6{
+display:none;
+}
+
+.footer .col-2{
+	flex-grow: 2;
 }
 
 }
@@ -587,7 +599,7 @@ canvas[resize] {
     height: 110%;
     position:fixed;
     margin-left: -30%;
-    top:-5vh;
+    top:-10vh;
     z-index:-1;
 }
 
@@ -596,6 +608,8 @@ canvas[resize] {
 	font-size:10px;
 	top:70vh;
 }
+
+
 
 .main{
 	height:100vh;
@@ -646,11 +660,24 @@ p{
 	padding-left:20px;
 }
 
+.arrow{
+	bottom:2vh;
 }
+
+.footer .col-6{
+display:none;
+}
+
+.footer .col-2{
+	flex-grow: 2;
+}
+
+}
+
 
 @media only screen
 and (min-device-width : 375px)
-and (max-device-width : 667px)
+and (max-device-width : 823px)
 and (orientation : landscape) {
 	canvas[resize] {
     width: 130%!important;
@@ -1217,7 +1244,7 @@ h3{
 
 .arrow{
 	z-index:+12;
-	top:85vh;
+	bottom:5vh;
 }
 
 .arrow img{
