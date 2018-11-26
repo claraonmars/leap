@@ -57,9 +57,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
           /* true to fetch page from server */
         });
 
-        $( "input" ).focus(function() {
-          $(window).scrollTop($('#mce-MMERGE2').offset().top);
-        });
 
 ///////////////////////////////////////////////////////////////////////
 // Initiate scrollify
@@ -146,6 +143,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
            else{
             document.querySelector('#canvas').style.display='block'
            }
+        });
+
+        $( "input" ).focus(function() {
+          $(window).scrollTop($('.mailerform').offset().top);
         });
 
         // var main = document.querySelectorAll('.main')
