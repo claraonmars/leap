@@ -700,8 +700,8 @@ and (orientation : landscape) {
 	flex-direction: column;
 	font-size:21px;
 	height:100vh;
-	width:;
-	border:white 1px solid;
+	/*width:;
+	border:white 1px solid;*/
 }
 
 .logo{
@@ -936,8 +936,8 @@ canvas[resize] {
 	height:100vh;
 		height: calc(var(--vh, 1vh) * 100);
 
-	width:;
-	border:red 1px solid;
+/*	width:;
+	border:red 1px solid;*/
 }
 
 .logo{
