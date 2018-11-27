@@ -146,7 +146,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         });
 
         $( "input" ).focus(function() {
-            document.querySelector('body').style.position = 'fixed'
+            document.querySelector('.mailerform').style.position = 'fixed'
           $(window).scrollTop($('input').offset().top);
         });
 
