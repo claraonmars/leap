@@ -145,9 +145,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
            }
         });
 
-        var hasFocus = $('input').is(':focus');
+        $('input').on('click', function() {
 
-        if (hasFocus){
+          if ($(document.activeElement).is('.email') || $(document.activeElement).is('.company') || $(document.activeElement).is('.name')) {
+            alert('isActiveAlement')
             option ={
                 updateHash:false,
             }
@@ -155,8 +156,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
             alert('updated')
             $.scrollify(option);
+          }
 
-        }
+        });
+
 
         // var main = document.querySelectorAll('.main')
 
