@@ -146,16 +146,12 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         });
 
         $('input').on('click', function() {
-
           if ($(document.activeElement).is('.email') || $(document.activeElement).is('.mailercompany') || $(document.activeElement).is('.mailername')) {
             option ={
                 updateHash:false
             }
+            alert('ok')
 
-            $.scrollify(option);
-            $('html, body').animate({
-                scrollTop: $(".email").offset().top
-            }, 2000);
           }
 
         });
