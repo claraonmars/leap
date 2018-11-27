@@ -147,14 +147,11 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
         $('input').on('click', function() {
 
-          if ($(document.activeElement).is('.email') || $(document.activeElement).is('.company') || $(document.activeElement).is('.name')) {
-            alert('isActiveAlement')
+          if ($(document.activeElement).is('.email') || $(document.activeElement).is('.company') || $(document.activeElement).is('.mailername')) {
             option ={
                 updateHash:false,
             }
 
-
-            alert('updated')
             $.scrollify(option);
           }
 
