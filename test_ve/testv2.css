@@ -592,7 +592,7 @@ display:none;
 /*tablet landscape*/
 @media only screen
 and (min-device-width : 768px)
-and (max-device-width : 1024px)
+and (max-device-width : 1092px)
 and (orientation : landscape) {
 canvas[resize] {
     width: 130%;
@@ -1168,7 +1168,7 @@ canvas[resize] {
     position:fixed;
     margin-left: -50%;
     z-index: -1;
-    top:-2vh;
+    top:-3vh;
 }
 
 .col-1,.col-2, .col-3, .col-4, .col-6, .col-5, .col-8{
@@ -1330,7 +1330,7 @@ h3{
 .dten{
 display:block;
 flex: none;
-margin-top:15vh;
+margin-top:13vh;
 }
 
 .deleven{
