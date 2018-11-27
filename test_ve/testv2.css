@@ -568,7 +568,7 @@ p{
 }
 
 .stmedia img{
-	width:60%;
+	width:80%;
 }
 
 .arrow{
@@ -1029,6 +1029,7 @@ h3{
 .sevent{
 	display: none;
 }
+
 .ninet{
 	display:block;
 	top:-40vh;
@@ -1274,7 +1275,7 @@ h3{
 .footer{
 /*	top:75vh;
 */	font-size:10px;
-		top:78vh;
+		top:76vh;
 }
 
 .footer .col-6{
