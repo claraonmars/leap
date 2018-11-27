@@ -1164,6 +1164,7 @@ canvas[resize] {
     position:fixed;
     margin-left: -50%;
     z-index: -1;
+    top:-2vh;
 }
 
 .col-1,.col-2, .col-3, .col-4, .col-6, .col-5, .col-8{
