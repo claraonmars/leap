@@ -185,6 +185,19 @@ $('body').bind('mousewheel touchmove', function(e) {
     }
 });
 
+if(isMobile){
+$('body').bind('touchmove', function(e) {
+    if(locked) {
+        var $div = $('.text');
+        alert('ok')
+        $div.scrollTop($div.scrollTop()
+                        - e.originalEvent.wheelDelta);
+
+        return false;
+    }
+});
+}
+
 ///////////////////////////////////////////////////////////////////////
 // Lightbox reveals
 ///////////////////////////////////////////////////////////////////////
