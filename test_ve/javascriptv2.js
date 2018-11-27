@@ -145,10 +145,14 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
            }
         });
 
-        if (document.activeElement){
+        if ($(document).activeElement){
             option ={
                 updateHash:false,
             }
+
+
+            alert('updated')
+            $.scrollify(option);
 
         }
 
