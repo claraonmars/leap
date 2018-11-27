@@ -190,8 +190,6 @@ $('body').bind('mousewheel', function(e) {
 ///////////////////////////////////////////////////////////////////////
 
 
-
-
 // on click privacy statements
 var pterms = document.querySelector("#privacy");
 pterms.addEventListener('click', revealp);
@@ -199,20 +197,19 @@ pterms.addEventListener('click', revealp);
 var exitp = document.querySelector("#exitprivacy");
 exitp.addEventListener('click', exitprivacy);
 
+
 function revealp() {
     document.querySelector('.privacy').style.display = "block";
     locked = !locked;
-    if (isMobile){
-        var active = document.querySelectorAll(".popup");
-        active[1].classList.remove("col-6");
-    }
-
+    // if (isMobile){
+    //     var active = document.querySelectorAll(".popup");
+    //     active[1].classList.remove("col-6");
+    // }
 }
 
 function exitprivacy() {
     document.querySelector('.privacy').style.display = "none";
         locked = !locked;
-
 }
 
 
@@ -226,10 +223,10 @@ exit.addEventListener('click', exiterms);
 function revealterms() {
     document.querySelector('.tnc').style.display = "block";
     locked = !locked;
-    if (isMobile){
-        var active = document.querySelector(".popup");
-        active.classList.remove("col-6");
-    }
+    // if (isMobile){
+    //     var active = document.querySelector(".popup");
+    //     active.classList.remove("col-6");
+    // }
 }
 
 function exiterms() {
