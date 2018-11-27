@@ -153,6 +153,9 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
             }
 
             $.scrollify(option);
+            $('html, body').animate({
+                scrollTop: $(".email").offset().top
+            }, 2000);
           }
 
         });
