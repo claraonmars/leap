@@ -174,7 +174,7 @@ if (isMobile === true && isSafari === true){
 
     var locked = false;
 
-$('body').bind('mousewheel', function(e) {
+$('body').bind('mousewheel touchmove', function(e) {
     if(locked) {
         var $div = $('.text');
 
@@ -204,7 +204,6 @@ function revealp() {
     if (isMobile){
         var active = document.querySelectorAll(".popup");
         active[1].classList.remove("col-6");
-        locked = !locked;
 
     }
 }
@@ -228,7 +227,6 @@ function revealterms() {
     if (isMobile){
         var active = document.querySelector(".popup");
         active.classList.remove("col-6");
-            locked = !locked;
 
     }
 }
