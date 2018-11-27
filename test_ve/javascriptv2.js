@@ -150,7 +150,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
             option ={
                 updateHash:false
             }
-            alert('ok')
 
           }
 
