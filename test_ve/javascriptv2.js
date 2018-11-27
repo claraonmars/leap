@@ -15,12 +15,6 @@ window.addEventListener('resize', () => {
 var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
 
-// // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-// let vh = window.innerHeight * 0.01;
-// // Then we set the value in the --vh custom property to the root of the document
-// document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-
 ///////////////////////////////////////////////////////////////////////
 // Check if mobile
 ///////////////////////////////////////////////////////////////////////
@@ -31,17 +25,15 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
 }
 
-// if (isMobile && isSafari){
-//     console.log('safari');
-//     document.querySelector('.footer').style.top = '60vh';
-//     var main = document.querySelectorAll('.main')
+if (isMobile === true && isSafari === true){
+    var main = document.querySelectorAll('.main')
+        console.log('safari')
 
+        for (var i = 0; i<main.length; i++){
+            main[i].style.height = window.innerHeight
+        }
 
-//         for (var i = 0; i<main.length; i++){
-//             main[i].style.height ='90vh'
-//         }
-
-// }
+}
 
 ///////////////////////////////////////////////////////////////////////
 // Resize on portrait to landscape switch
@@ -147,8 +139,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
         $('input').on('click', function() {
           if ($(document.activeElement).is('.email') || $(document.activeElement).is('.mailercompany') || $(document.activeElement).is('.mailername')) {
-
-
                 $.scrollify.disable();
 
 

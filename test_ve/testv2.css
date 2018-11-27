@@ -684,7 +684,7 @@ and (orientation : landscape) {
     height: 110%!important;
     position:fixed;
     margin-left: -30%;
-    top:-35vh!important;
+    top:-38vh!important;
     z-index:-1;
 }
 
@@ -918,7 +918,7 @@ canvas[resize] {
     height: 110%;
     position:fixed;
     margin-left: -30%;
-    top:-35vh;
+    top:-38vh;
     z-index:-1;
 }
 
@@ -943,6 +943,10 @@ canvas[resize] {
 .logo{
 	width:20vw;
 	z-index: +14;
+}
+
+.button{
+	width:50%
 }
 
 .baseline{
