@@ -1267,8 +1267,9 @@ h3{
 }
 
 .footer{
-	top:75vh;
-	font-size:10px;
+/*	top:75vh;
+*/	font-size:10px;
+		bottom:10vh;
 }
 
 .footer .col-6{
