@@ -754,6 +754,10 @@ h3{
 	width:5vw;
 }
 
+.button{
+	width:50%;
+}
+
 .lockupp{
 	display:block;
 	/*position: fixed;
@@ -946,7 +950,7 @@ canvas[resize] {
 }
 
 .button{
-	width:50%
+	width:50%;
 }
 
 .baseline{
