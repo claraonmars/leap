@@ -1181,7 +1181,7 @@ canvas[resize] {
 	font-size:30px;
 	height:100vh;
 	height: calc(var(--vh, 1vh) * 100);
-	border:green 1px solid;
+	border:white 1px solid;
 }
 
 .logo, .altlogo{
@@ -1270,7 +1270,7 @@ h3{
 .footer{
 /*	top:75vh;
 */	font-size:10px;
-		bottom:8vh;
+		top:80vh;
 }
 
 .footer .col-6{
