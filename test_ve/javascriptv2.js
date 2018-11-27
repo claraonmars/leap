@@ -79,8 +79,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
       sectionName:false,
       easing: "swing",
       scrollSpeed: 1000,
-      overflowscroll: true,
-      setHeights: false
+      overflowscroll: true
     };
 
     $(document).ready(function(e){
