@@ -1181,8 +1181,8 @@ canvas[resize] {
 	font-size:30px;
 	height:100vh;
 	height: calc(var(--vh, 1vh) * 100);
-	border:white 1px solid;
-}
+/*	border:white 1px solid;
+*/}
 
 .logo, .altlogo{
 	width:35vw;
