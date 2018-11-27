@@ -145,9 +145,12 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
            }
         });
 
-        $( "input" ).focus(function() {
-           if(disabled===true || document.activeElement.readOnly===false) { return true; } if(locked===true) { return false; }
-        });
+        if (document.activeElement){
+            option ={
+                updateHash:false,
+            }
+
+        }
 
         // var main = document.querySelectorAll('.main')
 
