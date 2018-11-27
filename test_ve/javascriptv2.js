@@ -146,8 +146,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         });
 
         $( "input" ).focus(function() {
-            document.querySelector('.mailerform').style.position = 'fixed'
-          $(window).scrollTop($('input').offset().top);
+           if(disabled===true || document.activeElement.readOnly===false) { return true; } if(locked===true) { return false; }
         });
 
         // var main = document.querySelectorAll('.main')
