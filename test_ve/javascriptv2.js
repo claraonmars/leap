@@ -146,7 +146,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
            }
         });
 
-        if (document.activeElement){
+        if ($("input").is(":focus")){
             option ={
                 updateHash:false,
             }
