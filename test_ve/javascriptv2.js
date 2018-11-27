@@ -146,6 +146,9 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
         });
 
         $( "input" ).focus(function() {
+            $(window).scrollTop($div.scrollTop()
+                        - e.originalEvent.wheelDelta);
+
           $(window).scrollTop($('input').offset().top);
         });
 
