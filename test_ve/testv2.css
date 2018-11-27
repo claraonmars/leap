@@ -380,6 +380,7 @@ label{
 	height:80%;
 	margin: 10% auto;
 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 .exit{
@@ -1170,6 +1171,10 @@ and (orientation : portrait) {
 	top:70vh!important;
 }
 
+.popup{
+	margin-top:5vh;
+}
+
  }
 
 
@@ -1411,6 +1416,7 @@ text-align:left;
 }
 
 .popup{
+	margin-top:5vh;
 	width:75vw;
 }
 

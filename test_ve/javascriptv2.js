@@ -201,10 +201,12 @@ exitp.addEventListener('click', exitprivacy);
 function revealp() {
     document.querySelector('.privacy').style.display = "block";
     locked = !locked;
-    // if (isMobile){
-    //     var active = document.querySelectorAll(".popup");
-    //     active[1].classList.remove("col-6");
-    // }
+    if (isMobile){
+        var active = document.querySelectorAll(".popup");
+        active[1].classList.remove("col-6");
+        locked = !locked;
+
+    }
 }
 
 function exitprivacy() {
@@ -223,10 +225,12 @@ exit.addEventListener('click', exiterms);
 function revealterms() {
     document.querySelector('.tnc').style.display = "block";
     locked = !locked;
-    // if (isMobile){
-    //     var active = document.querySelector(".popup");
-    //     active.classList.remove("col-6");
-    // }
+    if (isMobile){
+        var active = document.querySelector(".popup");
+        active.classList.remove("col-6");
+            locked = !locked;
+
+    }
 }
 
 function exiterms() {
