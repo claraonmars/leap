@@ -1,17 +1,16 @@
 @font-face {
 		font-family: Wigrum;
-		src: url('./wigrumweb-regular.woff') format('woff2');
+		src: url('../wigrumweb-regular.eot') format('eot');
+		src: url('../wigrumweb-regular.woff') format('woff2'), url('../wigrumweb-regular.eot?#iefix') format('embedded-opentype')
+
 }
 
 @font-face {
 		font-family: SweetSans;
-		src: url("./Sweet-SweetSans-Light.otf") format('opentype');
+		src: url("../Sweet-SweetSans-Light.eot") format('eot');
+		src: url('../Sweet-SweetSans-Light.eot?#iefix') format('embedded-opentype'), url("../Sweet-SweetSans-Light.otf") format('opentype')
 }
 
-@font-face {
-		font-family: STTOriginal;
-		src: url("./Texta-Regular.otf") format('opentype');
-}
 
 body {
 		margin: 0;
@@ -448,6 +447,22 @@ label{
 .again{
 	font-size: 30px;
 	text-align: center;
+
+}
+
+
+/*TV*/
+@media only screen
+and (min-device-width : 1920px) {
+canvas[resize] {
+    width: 130%;
+    height: 110%;
+    position:fixed;
+    margin-left: -30%;
+    top:-5vh;
+    z-index:-1;
+}
+
 
 }
 
