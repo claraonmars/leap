@@ -1,7 +1,7 @@
 @font-face {
 		font-family: Wigrum;
 		src: url('../wigrumweb-regular.eot') format('eot');
-		src: url('../wigrumweb-regular.woff') format('woff2'), url('../wigrumweb-regular.eot?#iefix') format('embedded-opentype')
+		src: url('../wigrumweb-regular.eot?#iefix') format('embedded-opentype'), url('../wigrumweb-regular.woff') format('woff2')
 
 }
 
@@ -73,7 +73,7 @@ a:hover {
 		height: 100vh;
 		top: 900vh;
 		z-index: +12;
-		font-family: SweetSans;
+		font-family: SweetSans, Helvetica, sans-serif;
 }
 
 #map {
@@ -106,7 +106,7 @@ a:hover {
 
 .deleven{
 	background-color: rgb(0, 15, 108);
-	font-family: SweetSans;
+	font-family: SweetSans, Helvetica, sans-serif;
 		line-height: 1.5;
 
 }
@@ -215,7 +215,7 @@ h5{
 }
 
 label{
-	font-family: Wigrum;
+	font-family: Wigrum, Helvetica, sans-serif;
 	font-size:12px;
 	letter-spacing: 0px;
 }
@@ -252,7 +252,7 @@ label{
 
 .name {
 		font-size: 70px;
-		font-family: SweetSans;
+		font-family: SweetSans, Helvetica, sans-serif;
 		letter-spacing: 40px;
 		line-height: 90px;
 }
@@ -273,7 +273,7 @@ label{
 .footer {
 		bottom: 10vh;
 		width: 90vw;
-		font-family: SweetSans;
+		font-family: SweetSans, Helvetica, sans-serif;
 		margin: 0 5vw;
 		position: fixed;
 		text-transform: uppercase;
@@ -321,7 +321,7 @@ label{
 		width:90vw;
 		margin: 0 5vw;
 		height:10vh;
-		font-family: Wigrum;
+		font-family: Wigrum, Helvetica, sans-serif;
 }
 
 .lightbox{
@@ -433,13 +433,8 @@ label{
 	display: none;
 }
 
-.stmedia{
-	font-family: STTOriginal;
-	font-size:13px;
-}
-
 .thanks{
-	font-family: Wigrum;
+	font-family: Wigrum, Helvetica, sans-serif;
 	font-size: 52px;
 	text-align: center;
 }
@@ -789,7 +784,7 @@ h3{
 	font-size:10px;
 	position: fixed;
 	width: 90vw;
-	font-family: SweetSans;
+	font-family: SweetSans, Helvetica, sans-serif;
 	margin: 0 5vw;
 	z-index:+10;
 }
@@ -1029,7 +1024,7 @@ h3{
 	font-size:10px;
 	position: fixed;
 	width: 90vw;
-	font-family: SweetSans;
+	font-family: SweetSans, Helvetica, sans-serif;
 	margin: 0 5vw;
 	z-index:+10;
 }

@@ -59,8 +59,6 @@ window.addEventListener('resize', () => {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
     };
 
-    console.log(isMobileDevice());
-
     function onFrame(event) {
         var scroll = window.scrollY;
         var body = document.body;
