@@ -66,7 +66,6 @@ if (isMobile === true && isSafari === true) {
         easing: "swing",
         scrollSpeed: 1000,
         overflowscroll: true,
-        touchScroll: false
     };
 
 
@@ -175,6 +174,7 @@ if (isMobile === true && isSafari === true) {
     });
 
     if (isMobile) {
+        $.scrollify.disable();
 
         document.querySelector('body').ontouchmove = moveTouch;
         document.querySelector('body').ontouchstart = disableResize;
@@ -186,22 +186,9 @@ if (isMobile === true && isSafari === true) {
         }
 
         function moveTouch(ev) {
-            console.log('moved')
-            option = {
-                section: '.scroll',
-                sectionName: false,
-                easing: "swing",
-                scrollSpeed: 1000,
-                overflowscroll: true,
-                touchScroll: true
-            };
-            count = count + 1
+            $.scrollify.enable();
 
-        }
 
-        if (count === 1){
-            $.scrollify(option);
-            console.log('ok')
         }
 
 
