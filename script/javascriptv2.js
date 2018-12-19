@@ -1,3 +1,10 @@
+window.addEventListener("load",function() {
+    console.log('load')
+    setTimeout(function(){
+        window.scrollTo(0, 1);
+    }, 0);
+});
+
 ///////////////////////////////////////////////////////////////////////
 // Set body height as window inner viewport height
 ///////////////////////////////////////////////////////////////////////
@@ -187,12 +194,6 @@ $('body').bind('mousewheel touchmove', function(e) {
 });
 
 if(isMobile){
-window.addEventListener("load",function() {
-    alert('load')
-    setTimeout(function(){
-        window.scrollTo(0, 1);
-    }, 0);
-});
 
 $('body').bind('touchmove', function(e) {
     if(locked) {
