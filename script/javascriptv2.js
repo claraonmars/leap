@@ -57,6 +57,8 @@ if (isMobile === true && isSafari === true) {
     //'use strict';
     var $section = $('.scroll');
     var $pager = $('#js-pager');
+            var count = 0;
+
 
     var option = {
         section: '.scroll',
@@ -173,7 +175,6 @@ if (isMobile === true && isSafari === true) {
     });
 
     if (isMobile) {
-        var count = 0;
 
         document.querySelector('body').ontouchmove = moveTouch;
         document.querySelector('body').ontouchstart = disableResize;
@@ -199,7 +200,7 @@ if (isMobile === true && isSafari === true) {
 
         if (count === 1){
             $.scrollify(option);
-
+            console.log('ok')
         }
 
 
