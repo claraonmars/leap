@@ -119,7 +119,6 @@ if (isMobile === true && isSafari === true){
 ///////////////////////////////////////////////////////////////////////
 
         if (isMobile === true){
-        window.scrollTo(0,1)
 
         var mains=document.querySelectorAll('.main')
         for (var i = 0;  i< mains.length; i++){
@@ -188,6 +187,8 @@ $('body').bind('mousewheel touchmove', function(e) {
 });
 
 if(isMobile){
+            window.scrollTo(0,1)
+
 $('body').bind('touchmove', function(e) {
     if(locked) {
         var $div = $('.text');
