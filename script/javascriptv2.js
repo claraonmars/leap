@@ -191,11 +191,16 @@ $('body').bind('mousewheel touchmove', function(e) {
 if(isMobile){
 
  document.querySelector('body').ontouchmove = moveTouch;
+document.querySelector('body').ontouchstart = disableResize;
 
- function moveTouch(ev){
+function disableResize(){
+    console.log('no longer resize')
     $( "body").unbind( "resize" );
 
+}
 
+
+ function moveTouch(ev){
     console.log('moved')
     option = {
       section : '.scroll',
