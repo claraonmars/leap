@@ -190,7 +190,7 @@ $('body').bind('mousewheel touchmove', function(e) {
 
 if(isMobile){
 
- body.ontouchmove = moveTouch;
+ document.querySelector('body').ontouchmove = moveTouch;
 
  function moveTouch(ev){
     option = {
