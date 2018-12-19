@@ -173,6 +173,7 @@ if (isMobile === true && isSafari === true) {
     });
 
     if (isMobile) {
+        var count = 0;
 
         document.querySelector('body').ontouchmove = moveTouch;
         document.querySelector('body').ontouchstart = disableResize;
@@ -184,6 +185,7 @@ if (isMobile === true && isSafari === true) {
         }
 
         function moveTouch(ev) {
+            count ++
             console.log('moved')
             option = {
                 section: '.scroll',
@@ -193,8 +195,10 @@ if (isMobile === true && isSafari === true) {
                 overflowscroll: true,
                 touchScroll: true
             };
+        }
 
-                    $.scrollify(option);
+        if (count === 1){
+            $.scrollify(option);
 
         }
 
