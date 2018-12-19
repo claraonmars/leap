@@ -119,7 +119,7 @@ if (isMobile === true && isSafari === true){
 ///////////////////////////////////////////////////////////////////////
 
         if (isMobile === true){
-           document.fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.documentElement.webkitRequestFullScreen;
+document.fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.documentElement.webkitRequestFullScreen;
 
 function requestFullscreen(element) {
     if (element.requestFullscreen) {
@@ -134,7 +134,6 @@ function requestFullscreen(element) {
 if (document.fullscreenEnabled) {
     requestFullscreen(document.documentElement);
 }
-
 
         var mains=document.querySelectorAll('.main')
         for (var i = 0;  i< mains.length; i++){
