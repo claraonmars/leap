@@ -195,7 +195,7 @@ document.querySelector('body').ontouchstart = disableResize;
 
 function disableResize(){
     console.log('no longer resize')
-    $( "body").unbind( "resize" );
+    $(window).unbind( "resize" );
 
 }
 
