@@ -119,6 +119,8 @@ if (isMobile === true && isSafari === true){
 ///////////////////////////////////////////////////////////////////////
 
         if (isMobile === true){
+        window.scrollTo(0,1)
+
         var mains=document.querySelectorAll('.main')
         for (var i = 0;  i< mains.length; i++){
             mains[i].style.height = $(window).innerHeight() + 'px!important'
