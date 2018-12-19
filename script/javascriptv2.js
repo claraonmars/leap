@@ -119,8 +119,21 @@ if (isMobile === true && isSafari === true){
 ///////////////////////////////////////////////////////////////////////
 
         if (isMobile === true){
-            var event = $.Event( "touchstart", { pageX:200, pageY:200 } );
-            $("body").trigger( event );
+           document.fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.documentElement.webkitRequestFullScreen;
+
+function requestFullscreen(element) {
+    if (element.requestFullscreen) {
+        element.requestFullscreen();
+    } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+}
+
+if (document.fullscreenEnabled) {
+    requestFullscreen(document.documentElement);
+}
 
 
         var mains=document.querySelectorAll('.main')
