@@ -193,6 +193,9 @@ if (isMobile === true && isSafari === true) {
                 overflowscroll: true,
                 touchScroll: true
             };
+
+                    $.scrollify(option);
+
         }
 
 
