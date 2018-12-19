@@ -57,7 +57,7 @@ if (isMobile === true && isSafari === true) {
     //'use strict';
     var $section = $('.scroll');
     var $pager = $('#js-pager');
-            var count = 0;
+    var count = 0;
 
 
     var option = {
@@ -195,7 +195,7 @@ if (isMobile === true && isSafari === true) {
                 overflowscroll: true,
                 touchScroll: true
             };
-                        count += 1
+            count = count + 1
 
         }
 
