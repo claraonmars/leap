@@ -119,21 +119,7 @@ if (isMobile === true && isSafari === true){
 ///////////////////////////////////////////////////////////////////////
 
         if (isMobile === true){
-document.fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.documentElement.webkitRequestFullScreen;
 
-function requestFullscreen(element) {
-    if (element.requestFullscreen) {
-        element.requestFullscreen();
-    } else if (element.mozRequestFullScreen) {
-        element.mozRequestFullScreen();
-    } else if (element.webkitRequestFullScreen) {
-        element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
-    }
-}
-
-if (document.fullscreenEnabled) {
-    requestFullscreen(document.documentElement);
-}
 
         var mains=document.querySelectorAll('.main')
         for (var i = 0;  i< mains.length; i++){
@@ -202,6 +188,21 @@ $('body').bind('mousewheel touchmove', function(e) {
 });
 
 if(isMobile){
+    document.fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.documentElement.webkitRequestFullScreen;
+
+function requestFullscreen(element) {
+    if (element.requestFullscreen) {
+        element.requestFullscreen();
+    } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+}
+
+if (document.fullscreenEnabled) {
+    requestFullscreen(document.documentElement);
+}
 
 $('body').bind('touchmove', function(e) {
     if(locked) {
