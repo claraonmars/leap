@@ -186,7 +186,6 @@ if (isMobile === true && isSafari === true) {
         }
 
         function moveTouch(ev) {
-            count +=1
             console.log('moved')
             option = {
                 section: '.scroll',
@@ -196,6 +195,8 @@ if (isMobile === true && isSafari === true) {
                 overflowscroll: true,
                 touchScroll: true
             };
+                        count += 1
+
         }
 
         if (count === 1){
