@@ -193,6 +193,9 @@ if(isMobile){
  document.querySelector('body').ontouchmove = moveTouch;
 
  function moveTouch(ev){
+    $( "body").unbind( "resize" );
+
+
     console.log('moved')
     option = {
       section : '.scroll',
