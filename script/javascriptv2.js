@@ -1,4 +1,3 @@
-
 ///////////////////////////////////////////////////////////////////////
 // Set body height as window inner viewport height
 ///////////////////////////////////////////////////////////////////////
@@ -72,8 +71,7 @@ if (isMobile === true && isSafari === true){
       sectionName:false,
       easing: "swing",
       scrollSpeed: 1000,
-      overflowscroll: true,
-      setHeights: false
+      overflowscroll: true
     };
 
     $(document).ready(function(e){
@@ -121,6 +119,9 @@ if (isMobile === true && isSafari === true){
 ///////////////////////////////////////////////////////////////////////
 
         if (isMobile === true){
+            var event = $.Event( "touchstart", { pageX:200, pageY:200 } );
+            $("body").trigger( event );
+
 
         var mains=document.querySelectorAll('.main')
         for (var i = 0;  i< mains.length; i++){
